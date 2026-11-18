@@ -7,11 +7,6 @@ text { overflow-wrap: break-word; }
 .page { width: 100%; max-width: 100%; height: 100%; min-height: 0; display: flex; flex-direction: column; background: #f4eee1; overflow: hidden; }
 .main-scroll { flex: 1; min-height: 0; min-width: 0; width: 100%; height: 0; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .shop-content { width: 100%; max-width: 600px; min-width: 0; margin: 0 auto; padding: 10px 12px 6px; }
-.shop-header { display: flex; align-items: center; justify-content: space-between; height: 31px; margin: 0 2px 4px; }
-.mini-plaque { color: #f7e8c8; background: #2c4c3b; border: 1px solid #ac9058; border-radius: 4px; padding: 3px 12px; box-shadow: inset 0 0 0 2px #2c4c3b, inset 0 0 0 3px #b89b60; font-family: "KaiTi", "STKaiti", "Songti SC", serif; font-size: 19px; font-weight: 700; letter-spacing: 2px; }
-.shop-tagline { font-size: 11px; color: #8f7d61; }
-.round-bar { display: flex; align-items: center; justify-content: space-between; height: 25px; padding: 0 3px; font-size: 12px; color: #735f42; }
-.round-bar text:last-child { color: #375a43; font-weight: 600; }
 .cabinet { position: relative; width: 100%; min-width: 0; padding: 0 7px; border: 2px solid #55301c; border-radius: 5px; background: linear-gradient(90deg, #4e2e20, #875734 3%, #5b3522 6%, #5b3522 94%, #895936 97%, #4d2b1c); box-shadow: 0 3px 0 #cdb89a, 0 5px 10px #6b4a2425; }
 .cabinet-crown { display: flex; align-items: center; justify-content: center; gap: 8px; height: 23px; margin: 0 -7px 0; border-top: 1px solid #be8b54; border-bottom: 2px solid #402417; border-radius: 3px 3px 0 0; background: linear-gradient(#a37144, #79502e); color: #e5c99a; font-size: 10px; letter-spacing: 3px; }
 .cabinet-crown view { width: 22px; height: 1px; background: #bf9865; }
@@ -22,7 +17,6 @@ text { overflow-wrap: break-word; }
 .page button.drawer[disabled] { opacity: 1; background: repeating-linear-gradient(2deg, transparent 0, transparent 8px, #49281016 9px, transparent 10px), linear-gradient(110deg, #9f6b42, #b17b4c 32%, #9d633b 70%, #87512d); }
 .drawer-open { transform: translateY(10px) rotateX(-32deg) scale(.97); z-index: 4; }
 .drawer-wrong { animation: nudge .25s ease; }
-.drawer-stored .paper-label { background: #e4dfc5; }
 .drawer-border { position: relative; height: 100%; min-width: 0; padding: 6px 3px 0; border: 1px solid #79502c; box-shadow: inset 0 1px #cc9c6955; }
 .paper-label { width: 100%; min-width: 0; height: 47px; padding: 3px 1px; border: 1px solid #cbb58d; border-radius: 2px; background: linear-gradient(110deg, #f1e8ce, #fff5dc 55%, #ebdfbd); box-shadow: 0 1px 2px #39200d44; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .herb-name { display: block; width: 100%; color: #433222; font-size: 19px; line-height: 24px; font-weight: 700; font-family: "KaiTi", "STKaiti", "Songti SC", serif; letter-spacing: 1px; white-space: nowrap; }
@@ -35,20 +29,12 @@ text { overflow-wrap: break-word; }
 .inside-herb { position: absolute; top: 5px; width: 62%; height: 62%; opacity: 0; z-index: 5; pointer-events: none; }
 .inside-flying { animation: receive-herb .36s ease both; }
 .inside-closing { opacity: 1; }
-.stored-mark { position: absolute; bottom: 4px; color: #e6c897; font-size: 10px; }
 .cabinet-foot { display: flex; justify-content: space-between; height: 7px; margin: 0 -7px; border-top: 1px solid #bc8e58; background: linear-gradient(#95623a, #55331e); }
 .cabinet-foot view { width: 16px; height: 9px; margin: 3px 8px 0; background: #624024; border-radius: 0 0 2px 2px; }
 .locked-drawer { width: 100%; min-width: 0; height: 98px; padding: 13px 6px; border: 1px solid #482c18; background: linear-gradient(110deg, #9c693f, #ad774a, #875530); }
 .locked-drawer .herb-name { color: #988265; }
-.tray-section { width: 100%; min-width: 0; padding-top: 12px; }
-.tray-caption { width: 100%; display: flex; align-items: center; justify-content: space-between; height: 32px; color: #6c604b; font-size: 12px; padding: 0 3px; }
-.page button.hint-button { width: 64px; flex: none; display: flex; align-items: center; justify-content: center; height: 29px; min-width: 64px; padding: 2px 14px; border: 1px solid #34573f; border-radius: 6px; color: #f8f0da; background: #34573f; font-size: 13px; }
-.page button.hint-button[disabled] { background: #34573f; color: #f8f0da; }
-.tray { position: relative; width: calc(100% - 8px); min-width: 0; height: 161px; margin: 4px auto 6px; padding: 7px; border: 1px solid #cccbbb; border-radius: 13px; background: linear-gradient(165deg, #fffdf5, #e8e8db 72%, #fbf9ed); box-shadow: 0 3px 0 #c7c6b3, 0 5px 9px #6a552322, inset 0 0 0 3px #fffef5; }
-.tray-rim { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; border-radius: 9px; border: 1px solid #d6d5c1; background: #f5f1e7; box-shadow: inset 0 2px 7px #998f6e22; overflow: hidden; }
 .tray-herb { display: block; width: 94%; height: 137px; max-height: 100%; object-fit: contain; transition: opacity .3s ease, transform .35s ease; }
-.tray-herb-hidden { opacity: 0; transform: translateY(-20px) scale(.65); }
-.ai-badge { position: absolute; right: 12px; bottom: 10px; padding: 1px 6px; border-radius: 5px; color: #6e745e; background: #fcf9edeb; font-size: 10px; line-height: 15px; }
+.tray-herb-hidden { opacity: 0; transform: translateY(8px) scale(.88); }
 .feedback-line { min-width: 0; height: 56px; padding: 6px 8px; display: flex; align-items: center; gap: 6px; border-radius: 6px; color: #78674e; }
 .feedback-copy { flex: 1; min-width: 0; }
 .feedback-title { display: block; color: #315c3d; font-size: 12px; font-weight: 600; line-height: 16px; }
@@ -68,7 +54,6 @@ text { overflow-wrap: break-word; }
 .secondary-button { background: #f6efdf; border: 1rpx solid #c8b995; color: #526747; }
 .completion-card, .empty-card { margin: 24rpx 0 10rpx; padding: 24rpx; border: 1rpx solid #daceb1; border-radius: 12rpx; background: #fffaf0; text-align: center; }
 .knowledge-label { display: block; margin: 22rpx 0 8rpx; color: #506b51; font-size: 24rpx; font-weight: 600; }
-.round-seal, .empty-seal { display: flex; justify-content: center; align-items: center; width: 70rpx; height: 70rpx; margin: 0 auto 16rpx; border: 3rpx double #9d654b; border-radius: 6rpx; color: #9d654b; font-size: 22rpx; }
 .return-link { display: flex; margin: 0 auto; font-size: 11px; min-height: 22px; padding: 0; }
 .footnote { display: block; text-align: center; color: #97876d; font-size: 10px; line-height: 16px; margin: 2px 0; }
 .library-panel { flex: 1; height: 0; min-height: 0; min-width: 0; width: 100%; max-width: 600px; margin: 0 auto; padding: 22rpx 28rpx 0; display: flex; flex-direction: column; }
@@ -132,5 +117,53 @@ text { overflow-wrap: break-word; }
 .source-label { color: #a58b5e; font-size: 20rpx; }.source-locator { color: #9b8d73; font-size: 21rpx; }
 @keyframes nudge { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }
 @keyframes receive-herb { from { opacity: 0; transform: translateY(24px) scale(.4); } to { opacity: 1; transform: translateY(0) scale(1); } }
-@media (min-height: 740px) { .shop-content { padding-top: 14px; }.drawer-slot, .locked-drawer { height: 110px; }.drawer-border { padding-top: 10px; }.paper-label { height: 51px; }.tray { height: 191px; }.tray-herb { height: 166px; }.tray-section { padding-top: 18px; }.feedback-line { height: 64px; } }
-@media (max-height: 740px) { .shop-content { padding-top: 5px; }.shop-header { height: 28px; }.round-bar { height: 23px; }.drawer-slot, .locked-drawer { height: 86px; }.drawer-border { padding-top: 3px; }.handle-base { margin-top: 5px; }.cabinet-crown { height: 20px; }.tray-section { padding-top: 8px; }.tray { height: 138px; }.tray-herb { height: 116px; }.feedback-line { height: 50px; }.tray-caption { height: 30px; } }
+
+
+.practice-header, .specimen-heading { display: flex; align-items: center; justify-content: space-between; }
+.practice-header { padding: 2px 2px 10px; }
+.practice-title { font: bold 23px/1.3 "Songti SC", "STSong", serif; color: #214b3d; }
+.round-label { margin-left: 9px; color: #73654f; font-size: 12px; }
+.count-label { font-size: 13px; color: #335c4b; font-weight: 600; }
+.specimen-card { background: #fffaf0; border: 1px solid #cbbea3; border-radius: 12px; overflow: hidden; margin-bottom: 10px; }
+.specimen-heading { padding: 0 12px; color: #40533e; font-size: 14px; font-weight: 600; border-bottom: 1px solid #e8dcc5; }
+.page button.hint-button { width: auto; height: 44px; padding: 0 8px; color: #305740; background: transparent; border: 0; font-weight: 600; }
+.page button.hint-button[disabled] { background: transparent; color: #7e806e; }
+.page button.specimen-photo, .missing-photo { width: 100%; height: 174px; position: relative; background: #f5efe3; display: flex; justify-content: center; align-items: center; }
+.page button.specimen-photo[disabled] { opacity: 1; }
+.specimen-photo .tray-herb { width: 92%; height: 100%; transition: opacity .2s ease-out, transform .25s ease-out; }
+.photo-caption, .zoom-label { position: absolute; bottom: 7px; font-size: 11px; line-height: 18px; color: #615741; background: #fffcf2ed; border-radius: 4px; padding: 0 5px; }
+.photo-caption { left: 8px; }
+.zoom-label { right: 8px; color: #365643; }
+.missing-photo { flex-direction: column; color: #725b42; font-size: 14px; }
+.missing-photo .text-button { min-height: 44px; }
+.drawer-mark { display: block; margin-top: 4px; font-size: 11px; line-height: 17px; color: #fff9df; }
+.page .drawer-wrong .paper-label { border-color: #914f36; background: #f5ddc9; }
+.page .drawer-stored .paper-label { color: #4b5740; background: #d7dfc7; }
+.page .drawer:active:not([disabled]) { transform: translateY(2px); }
+.feedback-line { height: auto; min-height: 48px; margin-top: 9px; }
+.feedback-text { font-size: 13px; line-height: 19px; }
+.feedback-idle { font-size: 12px; color: #685e4b; }
+.feedback-hint .feedback-title { color: #754d29; }
+.page button.feedback-detail, .page button.close-button { min-width: 44px; min-height: 44px; }
+.next-specimen, .feedback-correct, .feedback-hint, .completion-card { animation: appear .16s ease-out; }
+.modal-mask { animation: appear .15s ease-out; }
+.detail-modal, .zoom-modal { animation: lift-in .2s ease-out; }
+@keyframes appear { from { opacity: .25; } to { opacity: 1; } }
+@keyframes lift-in { from { opacity: .4; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.result-score { display: block; margin: 8px 0; font-size: 19px; color: #315642; font-weight: 600; }
+.page button.filter-button { flex: none; align-self: flex-start; min-height: 44px; padding: 0 12px; margin-bottom: 5px; border-radius: 8px; border: 1px solid #a6b49e; color: #34553f; font-size: 14px; }
+.page button.filter-on { background: #34553f; color: #fffaee; }
+.page button.compact { width: auto; margin: 0; }
+@media (max-height: 740px) {
+  .shop-content { padding-top: 6px; }
+  .drawer-slot, .locked-drawer { height: 83px; }
+  .drawer-border { padding-top: 3px; }
+  .handle-base { margin-top: 4px; }
+  .cabinet-crown { height: 20px; }
+  .page button.specimen-photo, .missing-photo { height: 146px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page .drawer, .page .tray-herb, .flying-herb { transition: none; }
+  .flying-herb { visibility: hidden; }
+  .next-specimen, .drawer-wrong, .inside-flying, .feedback-line, .completion-card, .modal-mask, .detail-modal, .zoom-modal { animation: none; }
+}

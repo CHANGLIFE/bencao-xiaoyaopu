@@ -1,6 +1,7 @@
 const { CATALOG, manifest, toDisplay, fieldVerified } = require('../../data/catalog')
 const engine = require('../../data/shop-engine')
 const SAVE_KEY = 'bencao-shop-progress-v1'
+const imageReview = require('../../data/image-review.json')
 const BATCH = 40
 // 放对后800ms归位动画结束即换成下一味药图，旧药不再留在托盘。
 // 辨认要点只留一行文字，停留这个时间后淡出，期间可以直接答下一题。
@@ -55,7 +56,7 @@ function display(entry) {
     aliasesText: (entry.aliases || []).join('、') || '暂无收录',
     originalNameText: entry.originalName || entry.sourceName || entry.name,
     processingText: processing.verified ? processing.method || '已核对炮制关系' : '炮制关系待核验',
-    recognitionBrief: (value.recognition.replace(/^[^：]*：/, '').split(/[，；。]/)[0] || '留意药材外形与纹理') + '。',
+    recognitionBrief: (imageReview[entry.id] && Array.isArray(imageReview[entry.id].checks) && imageReview[entry.id].checks.slice(1, 3).join('，') + '。') || (value.recognition.replace(/^[^：]*：/, '').split(/[，；。]/)[0] || '留意药材外形与纹理') + '。',
     observationBrief: ((value.observationHint || '').split(/[，；。]/)[0] || '留意这味药的外形、颜色和纹理') + '。'
   })
 }
@@ -67,6 +68,7 @@ Page({
     available: false, busy: false, phase: '', openId: '', wrongId: '', flying: null, flyStyle: '',
     observation: '', knowledge: null, zoom: null, detail: null,
     catalogRows: [], catalogTotal: CATALOG.length, verifiedCount: CATALOG.filter(item => fieldVerified(item, 'effect')).length, catalogBaseCount: manifest.count, loadedCount: 0, hasMore: false, query: '', catalogScrollTop: 0,
+    practiceOnly: false, readBlocked: false, skippedCount: 0, assistedNames: '', independentCount: 0,
     reviewRows: [], reviewCount: 0, eligibleReviewCount: 0, saveWarning: ''
   },
 
@@ -102,11 +104,16 @@ Page({
 
   restore() {
     try {
-      const saved = wx.getStorageSync(SAVE_KEY)
+      this._saveKey = SAVE_KEY
+      let saved = wx.getStorageSync(this._saveKey)
       if (!saved) return
       if (saved.version !== 1) {
-        this.setData({ saveWarning: '旧进度暂时无法读取，已保留原存档。' })
-        return
+        this._saveKey = SAVE_KEY + '-local'
+        saved = wx.getStorageSync(this._saveKey)
+        if (!saved) {
+          this.setData({ saveWarning: '其他版本的进度已保留。本次练习将单独保存。' })
+          return
+        }
       }
       const known = new Set(CATALOG.map(entry => entry.id))
       this._reviewIds = Array.isArray(saved.reviewIds) ? [...new Set(saved.reviewIds.filter(id => known.has(id)))] : []
@@ -123,12 +130,13 @@ Page({
       }
       if (this._normalState && this._normalState.status === 'placed') this._normalState = engine.commit(this._normalState)
     } catch (error) {
-      this.setData({ saveWarning: '暂时无法读取进度，请检查设备存储空间后重试。' })
+      this.setData({ readBlocked: true, saveWarning: '暂时无法读取进度，请重试后继续练习。' })
     }
   },
   persist() {
+    if (this.data.readBlocked) return false
     try {
-      wx.setStorageSync(SAVE_KEY, {
+      wx.setStorageSync(this._saveKey, {
         version: 1, roundIndex: this._roundIndex,
         snapshot: this._state ? engine.exportSnapshot(this._state, CATALOG) : null,
         normalSnapshot: this._normalState ? engine.exportSnapshot(this._normalState, CATALOG) : null,
@@ -143,6 +151,12 @@ Page({
     }
   },
   retrySave() { this.persist() },
+  retryRead() {
+    this.setData({ readBlocked: false, saveWarning: '' })
+    this.restore()
+    this.syncView()
+    this.scheduleResultFade()
+  },
   entry(id) { return display(CATALOG.find(item => item.id === id)) },
   createNormal(index) {
     this._roundIndex = index
@@ -152,9 +166,17 @@ Page({
   },
   syncView() {
     const state = this._state
+    const skipped = (state && state.skippedIds) || []
+    const assisted = state ? state.completedIds.filter(id => state.attempts[id].hints || state.attempts[id].wrong) : []
     this.setData({
+      retryingImage: false, poolCount: this._pool.length, skippedCount: skipped.length,
+      independentCount: state ? state.completedIds.length - assisted.length : 0,
+      assistedNames: assisted.map(id => this.entry(id).name).join('、'),
       available: this._pool.length >= 6, roundIndex: state ? state.roundIndex : this._roundIndex,
-      drawers: state ? state.drawerIds.map((id, index) => Object.assign({}, this.entry(id), { index, placed: state.completedIds.includes(id) })) : [],
+      drawers: state ? state.drawerIds.map(id => {
+        const { name, shortEffect, image } = this.entry(id)
+        return { id, name, shortEffect, image, placed: state.completedIds.includes(id), skipped: skipped.includes(id) }
+      }) : [],
       current: state ? this.entry(engine.currentId(state)) : null,
       progress: state ? state.completedIds.length : 0, total: state ? state.trayIds.length : 6,
       mode: state ? state.mode : 'normal', completed: !!state && state.status === 'completed',
@@ -186,8 +208,10 @@ Page({
   },
   onGuess(event) {
     if (this.data.busy || !this._state || this._state.status !== 'awaiting') return
-    this.dismissResult()
     const id = event.currentTarget.dataset.id
+    if (this.data.readBlocked || this.data.retryingImage || !this.data.current.image ||
+        this._state.completedIds.includes(id) || (this._state.skippedIds || []).includes(id)) return
+    this.dismissResult()
     const next = engine.guess(this._state, id)
     this.applyState(next)
     this.persist()
@@ -200,11 +224,13 @@ Page({
     this.startPlacement(id)
   },
   onHint() {
-    if (this.data.busy || !this._state || this._state.status !== 'awaiting') return
+    if (this.data.readBlocked || this.data.retryingImage || !this.data.current || !this.data.current.image || this.data.busy || !this._state || this._state.status !== 'awaiting') return
     this.dismissResult()
     this.applyState(engine.hint(this._state))
     const current = this.entry(engine.currentId(this._state))
-    this.setData({ observation: current.observationBrief })
+    const attempt = this._state.attempts[current.id]
+    const clue = attempt.wrong > 0 ? current.recognitionBrief : current.observationBrief
+    this.setData({ wrongId: '', observation: clue })
     this.refreshReview()
     this.persist()
   },
@@ -309,7 +335,7 @@ Page({
       return
     }
     ids = shuffle(ids)
-    if (focus && ids.includes(focus)) ids = [focus].concat(ids.filter(id => id !== focus))
+    if (focus && ids.includes(focus)) ids = [focus]
     ids = ids.slice(0, 6)
     const state = engine.createRound(this._pool, this._roundIndex, ids, this._lastDrawerOrder)
     state.trayIds = differentOrder(state.trayIds, this._lastReviewOrder)
@@ -335,20 +361,43 @@ Page({
     this.persist()
   },
   openZoom() {
-    if (!this.data.busy && this.data.current && !this._knowledgeId) this.setData({ zoom: this.data.current })
+    if (this.data.busy || !this.data.current || !this.data.current.image) return
+    this.clearResultFade()
+    this.setData({ zoom: this.data.current })
   },
-  closeZoom() { this.setData({ zoom: null }) },
+  closeZoom() { this.setData({ zoom: null }); this.scheduleResultFade() },
+  retryImage() {
+    if (this.data.current) this.setData({ retryingImage: true, current: this.entry(this.data.current.id) })
+  },
+  skipImage() {
+    if (this.data.readBlocked || this.data.busy || !this.data.current || this.data.current.image) return
+    this.dismissResult()
+    this.applyState(engine.skipUnavailable(this._state))
+    this.setData({ observation: '', wrongId: '' })
+    this.syncView()
+    this.persist()
+  },
+  onImageLoad(event) {
+    if (this.data.retryingImage && this.data.current && this.data.current.id === event.currentTarget.dataset.id) {
+      this.setData({ retryingImage: false })
+    }
+  },
   onImageError(event) {
     const id = event.currentTarget.dataset.id
     if (this.data.zoom && this.data.zoom.id === id) this.setData({ 'zoom.image': '' })
     if (this.data.detail && this.data.detail.id === id) this.setData({ 'detail.image': '' })
-    if (this.data.current && this.data.current.id === id) this.setData({ 'current.image': '' })
+    if (this.data.current && this.data.current.id === id) this.setData({ 'current.image': '', retryingImage: false })
+  },
+  togglePracticeFilter() {
+    this.setData({ practiceOnly: !this.data.practiceOnly })
+    this.searchCatalog(this.data.query)
   },
   onSearch(event) { this.searchCatalog(event.detail.value) },
   searchCatalog(query) {
     const needle = String(query || '').trim().toLowerCase()
-    const byEngine = new Set(engine.search(CATALOG, needle).map(item => item.id))
-    this._results = CATALOG.filter(entry => byEngine.has(entry.id) ||
+    const catalog = this.data.practiceOnly ? this._pool : CATALOG
+    const byEngine = new Set(engine.search(catalog, needle).map(item => item.id))
+    this._results = catalog.filter(entry => byEngine.has(entry.id) ||
       (fieldVerified(entry, 'effect') && entry.shortEffectVerified !== false && typeof entry.shortEffect === 'string' && entry.shortEffect.toLowerCase().includes(needle)))
       .sort((a, b) => Number(fieldVerified(b, 'effect')) - Number(fieldVerified(a, 'effect')))
     this._lastScrollLoad = 0
@@ -360,7 +409,7 @@ Page({
     const end = Math.min(this.data.loadedCount + BATCH, this._results.length)
     const next = this._results.slice(this.data.loadedCount, end).map(entry => {
       const item = display(entry)
-      return { id: item.id, name: item.name, shortEffect: item.shortEffect, initial: item.name.slice(0, 1) }
+      return { id: item.id, name: item.name, shortEffect: item.shortEffect, image: item.image, initial: item.name.slice(0, 1) }
     })
     this.setData({ catalogRows: this.data.catalogRows.concat(next), loadedCount: end, hasMore: end < this._results.length })
   },

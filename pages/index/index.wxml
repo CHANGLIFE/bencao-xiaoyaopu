@@ -1,16 +1,28 @@
 <view class="page">
-  <view class="save-warning" wx:if="{{saveWarning}}"><text>{{saveWarning}}</text><button class="text-button" bindtap="retrySave">重试保存</button></view>
+  <view class="save-warning" wx:if="{{saveWarning}}"><text>{{saveWarning}}</text><button wx:if="{{readBlocked}}" class="text-button" bindtap="retryRead">重试读取</button><button wx:else class="text-button" bindtap="retrySave">重试保存</button></view>
   <scroll-view wx:if="{{tab === 'shop'}}" class="main-scroll" scroll-y="true" enhanced>
     <view class="shop-content">
-      <view class="shop-header"><view class="mini-plaque">本草小药铺</view><text class="shop-tagline">慢慢认，记得牢</text></view>
-      <view class="round-bar"><text>{{mode === 'review' ? '温故一笺' : '今日识药'}} · 第 {{roundIndex + 1}} 轮</text><text wx:if="{{available}}">已归位 {{progress}}/{{total}}</text><text wx:else>静候本草入柜</text></view>
-      <view class="cabinet">
-        <view class="cabinet-crown"><view></view><text>药材归屉</text><view></view></view>
+      <view class="practice-header">
+        <view><text class="practice-title">{{mode === 'review' ? '温习药材' : '看图识药'}}</text><text wx:if="{{available}}" class="round-label">第 {{roundIndex + 1}} 轮</text></view>
+        <text wx:if="{{available}}" class="count-label">已归位 {{progress}} / {{total}}</text>
+      </view>
+      <block wx:if="{{available && !completed}}">
+        <view class="specimen-card">
+          <view class="specimen-heading"><text>观察第 {{progress + skippedCount + 1}} 味药材</text><button class="hint-button" bindtap="onHint" disabled="{{busy || readBlocked || retryingImage || !current.image}}">看提示</button></view>
+          <button wx:if="{{current.image}}" class="specimen-photo" bindtap="openZoom" disabled="{{busy}}" aria-label="放大查看当前药材">
+            <image id="tray-herb" class="tray-herb {{knowledge ? 'next-specimen' : ''}} {{phase === 'flying' || phase === 'closing' ? 'tray-herb-hidden' : ''}}" src="{{current.trayImage}}" mode="aspectFit" data-id="{{current.id}}" bindload="onImageLoad" binderror="onImageError"/>
+            <text class="photo-caption" wx:if="{{current.imageType === 'ai-illustration'}}">AI 示意图</text><text class="zoom-label">放大 ↗</text>
+          </button>
+          <view wx:else class="missing-photo"><text>这张药图未能载入</text><view><button class="text-button" bindtap="retryImage">重新加载</button><button class="text-button" bindtap="skipImage" disabled="{{readBlocked}}">跳过此味</button></view></view>
+        </view>
+      </block>
+      <view wx:if="{{!completed}}" class="cabinet">
+        <view class="cabinet-crown"><view></view><text>选择对应的药屉</text><view></view></view>
         <view class="drawer-grid" wx:if="{{available}}">
           <view wx:for="{{drawers}}" wx:key="id" id="drawer-{{index}}" class="drawer-slot">
-            <view class="drawer-interior"><image wx:if="{{openId === item.id && phase !== 'opening'}}" class="inside-herb inside-{{phase}}" src="{{item.image}}" mode="aspectFit"/><text wx:if="{{item.placed}}" class="stored-mark">已归药</text></view>
-            <button class="drawer {{openId === item.id && phase !== 'closing' ? 'drawer-open' : ''}} {{wrongId === item.id ? 'drawer-wrong' : ''}} {{item.placed ? 'drawer-stored' : ''}}" data-id="{{item.id}}" bindtap="onGuess" disabled="{{busy || completed}}" aria-label="{{item.name}}，{{item.shortEffect}}">
-              <view class="drawer-border"><view class="paper-label"><text class="herb-name {{item.name.length > 5 ? 'herb-name-long' : ''}}">{{item.name}}</text><text class="herb-effect">{{item.shortEffect}}</text></view><view class="handle-base"><view class="handle-ring"></view></view><view class="wood-pin pin-left"></view><view class="wood-pin pin-right"></view></view>
+            <view class="drawer-interior"><image wx:if="{{openId === item.id && phase !== 'opening'}}" class="inside-herb inside-{{phase}}" src="{{item.image}}" mode="aspectFit"/></view>
+            <button class="drawer {{openId === item.id && phase !== 'closing' ? 'drawer-open' : ''}} {{wrongId === item.id ? 'drawer-wrong' : ''}} {{item.placed ? 'drawer-stored' : ''}}" data-id="{{item.id}}" bindtap="onGuess" disabled="{{busy || completed || readBlocked || retryingImage || !current.image || item.placed || item.skipped}}" aria-label="{{item.name}}，{{item.shortEffect}}">
+              <view class="drawer-border"><view class="paper-label"><text class="herb-name {{item.name.length > 5 ? 'herb-name-long' : ''}}">{{item.name}}</text><text class="herb-effect">{{item.shortEffect}}</text></view><text wx:if="{{item.placed || item.skipped}}" class="drawer-mark">{{item.placed ? '✓ 已归位' : '已跳过'}}</text><view wx:else class="handle-base"><view class="handle-ring"></view></view><view class="wood-pin pin-left"></view><view class="wood-pin pin-right"></view></view>
             </button>
           </view>
         </view>
@@ -18,39 +30,46 @@
         <view class="cabinet-foot"><view></view><view></view></view>
       </view>
       <block wx:if="{{available}}">
-        <view class="tray-section" wx:if="{{!completed}}">
-          <view class="tray-caption"><text>{{busy ? '正在归屉…' : knowledge ? '上一味已归柜，再看这一味' : '看看药材，点选上方药屉'}}</text><button class="hint-button" bindtap="onHint" disabled="{{busy}}">提示</button></view>
-          <view class="tray" bindtap="openZoom" aria-label="放大查看当前药材"><view class="tray-rim"><image wx:if="{{current.image}}" id="tray-herb" class="tray-herb {{phase === 'flying' || phase === 'closing' ? 'tray-herb-hidden' : ''}}" src="{{current.trayImage}}" mode="aspectFit" data-id="{{current.id}}" binderror="onImageError"/><view wx:else class="image-placeholder">图像暂不可用</view></view><text class="ai-badge" wx:if="{{current.imageType === 'ai-illustration'}}">AI 示意图 · 点图放大</text></view>
-          <view class="feedback-line {{knowledge ? 'feedback-correct' : ''}} {{observation ? 'feedback-hint' : ''}}">
-            <block wx:if="{{knowledge}}"><view class="feedback-copy"><text class="feedback-title">{{knowledge.name}} · 认对了</text><text class="feedback-text">{{knowledge.recognitionBrief}}</text></view><button class="feedback-detail" data-id="{{knowledge.id}}" bindtap="openDetail">详情</button></block>
-            <block wx:elif="{{observation}}"><text class="feedback-text">{{observation}}</text></block>
-            <block wx:else><text class="feedback-idle">不着急，看看颜色、形状和纹理。</text></block>
-          </view>
+        <view wx:if="{{!completed}}" class="feedback-line {{knowledge ? 'feedback-correct' : ''}} {{observation ? 'feedback-hint' : ''}}" aria-live="polite">
+          <block wx:if="{{knowledge}}"><view class="feedback-copy"><text class="feedback-title">上一味 · {{knowledge.name}} 已归位</text><text class="feedback-text">{{knowledge.recognitionBrief}}</text></view><button class="feedback-detail" data-id="{{knowledge.id}}" bindtap="openDetail">详情</button></block>
+          <block wx:elif="{{observation}}"><view class="feedback-copy"><text class="feedback-title">{{wrongId ? '还差一点，再选一次' : '观察提示'}}</text><text class="feedback-text">{{observation}}</text></view></block>
+          <text wx:else class="feedback-idle">{{busy ? '认对了，正在归屉…' : '看清药图后，点一下对应的药屉。'}}</text>
         </view>
-        <view class="completion-card" wx:if="{{completed}}"><view class="round-seal">归药毕</view><text class="section-title">{{mode === 'review' ? '这一笺，温习好了' : '六味本草，悉数归柜'}}</text><text class="muted" wx:if="{{knowledge}}">{{knowledge.name}} · {{knowledge.recognitionBrief}}</text><text class="muted">本轮已辨认 {{total}} 味，歇一歇，也可以继续。</text><button class="primary-button" wx:if="{{mode !== 'review' || eligibleReviewCount > 0}}" bindtap="nextRound">{{mode === 'review' ? '继续复习' : '开启下一轮'}}</button><button class="secondary-button" wx:if="{{mode === 'review'}}" bindtap="backToShop">返回日常药铺</button><button class="text-button" bindtap="goCatalog">去图鉴再读一读</button></view>
-        <button class="return-link text-button" wx:if="{{mode === 'review' && !completed}}" bindtap="backToShop">暂歇复习，返回日常药铺</button>
+        <view class="completion-card" wx:if="{{completed}}">
+          <text class="section-title">{{mode === 'review' ? '复习完成' : '本轮完成'}}</text>
+          <text class="result-score">独立认对 {{independentCount}} / {{total}} 味</text>
+          <text wx:if="{{assistedNames}}" class="muted">用过提示或重试过 · {{assistedNames}}</text>
+          <text wx:if="{{skippedCount}}" class="muted">因缺图跳过 {{skippedCount}} 味</text>
+          <text class="muted" wx:if="{{knowledge}}">上一味 · {{knowledge.name}}　{{knowledge.recognitionBrief}}</text>
+          <button class="primary-button" wx:if="{{mode !== 'review' || eligibleReviewCount > 0}}" bindtap="nextRound">{{mode === 'review' ? '继续复习' : '开启下一轮'}}</button>
+          <button class="secondary-button" wx:if="{{mode === 'normal' && assistedNames && eligibleReviewCount}}" bindtap="startReview">复习待巩固药材</button>
+          <button class="secondary-button" wx:if="{{mode === 'review'}}" bindtap="backToShop">返回日常药铺</button>
+          <button class="text-button" bindtap="goCatalog">查看本草图鉴</button>
+        </view>
+        <button class="return-link text-button" wx:if="{{mode === 'review' && !completed}}" bindtap="backToShop">返回日常练习</button>
       </block>
-      <view class="empty-card" wx:else><text class="section-title">药柜暂未解锁</text><text class="body-copy">练习药材正在整理中。先翻翻本草图鉴，认识药名与本味，待药柜备齐再来归药。</text><button class="primary-button" bindtap="goCatalog">前往本草图鉴</button></view>
+      <view class="empty-card" wx:else><text class="section-title">药柜正在备药</text><button class="primary-button" bindtap="goCatalog">前往本草图鉴</button></view>
       <text class="footnote">本草知识仅供学习，请勿据此自行用药。</text>
     </view>
   </scroll-view>
 
   <view wx:elif="{{tab === 'catalog'}}" class="library-panel">
-    <view class="panel-heading"><text class="eyebrow">草木皆有来处</text><text class="page-title">本草图鉴</text><text class="muted">已校对功效优先展示，2味药典未列功效已注明。全部品名均可搜索。</text></view>
+    <view class="panel-heading"><text class="page-title">本草图鉴</text><text class="muted">已收录 {{catalogBaseCount}} 味药材，可按药名、别名或功效查找。</text></view>
     <view class="search-box"><text class="search-symbol">⌕</text><input value="{{query}}" bindinput="onSearch" placeholder="搜药名、别名或功效" placeholder-class="search-placeholder" confirm-type="search" aria-label="搜索药名、别名或功效"/></view>
-    <view class="list-caption"><text>共 {{catalogTotal}} 味</text><text class="verified-count">已校对 {{verifiedCount}}/{{catalogBaseCount}}</text></view>
+    <button class="filter-button {{practiceOnly ? 'filter-on' : ''}}" bindtap="togglePracticeFilter">{{practiceOnly ? '✓ 只看可练药材' : '只看可练药材'}} · {{poolCount}} 味</button>
+    <view class="list-caption"><text>共 {{catalogTotal}} 味</text><text class="verified-count">全库功效已校对 {{verifiedCount}}/{{catalogBaseCount}}</text></view>
     <scroll-view class="catalog-scroll" scroll-y="true" enhanced lower-threshold="160" bindscrolltolower="loadMore" bindscroll="onCatalogScroll" scroll-top="{{catalogScrollTop}}">
-      <view class="catalog-list"><button class="catalog-row" wx:for="{{catalogRows}}" wx:key="id" data-id="{{item.id}}" bindtap="openDetail"><view class="index-seal">{{item.initial}}</view><view class="row-copy"><text class="row-name">{{item.name}}</text><text class="row-effect">{{item.shortEffect}}</text></view><text class="row-arrow">›</text></button></view>
+      <view class="catalog-list"><button class="catalog-row" wx:for="{{catalogRows}}" wx:key="id" data-id="{{item.id}}" bindtap="openDetail"><image wx:if="{{item.image}}" class="index-seal" src="{{item.image}}" mode="aspectFit"/><view wx:else class="index-seal">{{item.initial}}</view><view class="row-copy"><text class="row-name">{{item.name}}</text><text class="row-effect">{{item.shortEffect}}</text></view><text class="row-arrow">›</text></button></view>
       <view class="empty-inline" wx:if="{{!catalogTotal}}">未找到这味本草，换个药名或别名试试。</view>
-      <button class="more-button" wx:if="{{hasMore}}" bindtap="loadMore">继续翻阅 · 已阅 {{loadedCount}} 味</button><text class="list-end" wx:elif="{{catalogTotal}}">已至卷末 · 共 {{catalogTotal}} 味</text>
+      <button class="more-button" wx:if="{{hasMore}}" bindtap="loadMore">继续翻阅 · 已显示 {{loadedCount}} 味</button><text class="list-end" wx:elif="{{catalogTotal}}">已至卷末 · 共 {{catalogTotal}} 味</text>
     </scroll-view>
   </view>
 
   <view wx:else class="library-panel">
-    <view class="panel-heading"><text class="eyebrow">重逢，便多认得一点</text><text class="page-title">我的复习笺</text><text class="muted">认错或看过提示的药材，留在这里再温习。</text></view>
+    <view class="panel-heading"><text class="page-title">我的复习笺</text><text class="muted">认错或看过提示的药材，留在这里再温习。</text></view>
     <view class="review-summary"><view><text class="review-number">{{reviewCount}}</text><text class="muted"> 味待温习</text></view><button class="primary-button compact" disabled="{{!eligibleReviewCount}}" bindtap="startReview">开始复习</button></view>
     <text class="review-explainer" wx:if="{{eligibleReviewCount}}">每回换个顺序，只练待温习的药材；独立认对，便可收起一笺。</text>
-    <scroll-view class="catalog-scroll" scroll-y="true" enhanced><view class="catalog-list"><view class="review-row" wx:for="{{reviewRows}}" wx:key="id"><button class="review-item" data-id="{{item.id}}" bindtap="openDetail"><view class="row-copy"><text class="row-name">{{item.name}}</text><text class="row-effect">{{item.shortEffect}}</text></view></button><button class="review-start" wx:if="{{item.canPractice}}" data-id="{{item.id}}" bindtap="startReview">再认一遍</button><text class="muted" wx:else>待开放</text></view></view><view class="empty-card review-empty" wx:if="{{!reviewCount}}"><view class="empty-seal">习</view><text class="section-title">笺上暂无牵挂</text><text class="body-copy">先去药铺认一认本草。还没记牢的，我们替你留一笺。</text><button class="secondary-button" data-tab="shop" bindtap="onTab">去药铺看看</button></view><view class="empty-inline" wx:elif="{{!eligibleReviewCount}}">这些药材暂未开放练习，仍可点开阅读图鉴。</view></scroll-view>
+    <scroll-view class="catalog-scroll" scroll-y="true" enhanced><view class="catalog-list"><view class="review-row" wx:for="{{reviewRows}}" wx:key="id"><button class="review-item" data-id="{{item.id}}" bindtap="openDetail"><view class="row-copy"><text class="row-name">{{item.name}}</text><text class="row-effect">{{item.shortEffect}}</text></view></button><button class="review-start" wx:if="{{item.canPractice}}" data-id="{{item.id}}" bindtap="startReview">再认一遍</button><text class="muted" wx:else>待开放</text></view></view><view class="empty-card review-empty" wx:if="{{!reviewCount}}"><text class="section-title">暂无待复习药材</text><text class="body-copy">练习时答错或看过提示的药材会出现在这里。</text><button class="secondary-button" data-tab="shop" bindtap="onTab">去药铺看看</button></view><view class="empty-inline" wx:elif="{{!eligibleReviewCount}}">这些药材暂未开放练习，仍可点开阅读图鉴。</view></scroll-view>
   </view>
 
   <view class="bottom-nav"><button wx:for="{{tabs}}" wx:key="id" class="nav-item {{tab === item.id ? 'nav-active' : ''}}" data-tab="{{item.id}}" bindtap="onTab" aria-label="{{item.name}}"><view class="nav-icon">{{item.mark}}<view class="review-dot" wx:if="{{item.id === 'review' && reviewCount}}"></view></view><text>{{item.name}}</text><view class="nav-underline"></view></button></view>
@@ -58,5 +77,5 @@
 
   <view class="modal-mask" wx:if="{{zoom}}" bindtap="closeZoom" catchtouchmove="noop"><view class="zoom-modal" catchtap="noop"><view class="modal-head"><text class="section-title">细看本草</text><button class="close-button" bindtap="closeZoom" aria-label="关闭大图">×</button></view><view class="zoom-image-wrap"><image wx:if="{{zoom.image}}" class="zoom-image" src="{{zoom.image}}" mode="aspectFit" data-id="{{zoom.id}}" binderror="onImageError"/><view wx:else class="image-placeholder">图像暂不可用，请稍后再看</view></view><text class="image-caption" wx:if="{{zoom.imageType === 'ai-illustration'}}">AI示意图 · 用于辅助学习辨认</text><text class="muted zoom-hint">留意外形、色泽和表面纹理，再为它找一只药屉。</text><button class="primary-button" bindtap="closeZoom">看好了，回去归药</button></view></view>
 
-  <view class="modal-mask" wx:if="{{detail}}" bindtap="closeDetail" catchtouchmove="noop"><view class="detail-modal" catchtap="noop"><view class="modal-head"><view><text class="eyebrow">本草一页</text><text class="section-title">{{detail.name}}</text></view><button class="close-button" bindtap="closeDetail" aria-label="关闭详情">×</button></view><scroll-view class="detail-scroll" scroll-y="true" enhanced><view class="detail-content"><view class="detail-image-wrap" wx:if="{{detail.image}}"><image class="detail-image" src="{{detail.image}}" mode="aspectFit" data-id="{{detail.id}}" binderror="onImageError"/><text class="image-caption" wx:if="{{detail.imageType === 'ai-illustration'}}">AI示意图</text></view><view class="detail-no-image" wx:else>此味尚无药图，亦可开卷识本草。</view><view class="detail-meta" wx:if="{{detail.sampleLabel}}"><text>图片样本</text><text>{{detail.sampleLabel}}</text></view><view class="detail-meta"><text>别名</text><text>{{detail.aliasesText}}</text></view><view class="detail-meta"><text>原名</text><text>{{detail.originalNameText}}</text></view><text class="knowledge-label">完整功效</text><text class="body-copy selectable" selectable>{{detail.effect}}</text><view class="detail-meta" wx:if="{{detail.usageText}}"><text>药典用途</text><text>{{detail.usageText}}（不作功效）</text></view><text class="body-copy" wx:if="{{detail.effectReason}}">{{detail.effectReason}}。</text><text class="knowledge-label">辨认要点</text><text class="body-copy selectable" selectable>{{detail.recognition}}</text><text class="knowledge-label">原药材与炮制关系</text><text class="body-copy">{{detail.processingText}}</text><button wx:for="{{detail.relations}}" wx:key="id" class="relation-row" data-id="{{item.id}}" bindtap="openDetail"><text>{{item.name}}</text><text>{{item.text}} ›</text></button><text class="knowledge-label">资料出处</text><view wx:for="{{detail.sourcesList}}" wx:key="key" class="source-row"><text class="source-label">{{item.label}}</text><text selectable>{{item.citation}}</text><text selectable class="source-locator">{{item.locator}}</text></view><text class="body-copy" wx:if="{{!detail.sourcesList.length}}">资料出处待补充。</text><text class="footnote">本草知识仅供学习，请勿据此自行用药。</text></view></scroll-view></view></view>
+  <view class="modal-mask" wx:if="{{detail}}" bindtap="closeDetail" catchtouchmove="noop"><view class="detail-modal" catchtap="noop"><view class="modal-head"><view><text class="eyebrow">本草一页</text><text class="section-title">{{detail.name}}</text></view><button class="close-button" bindtap="closeDetail" aria-label="关闭详情">×</button></view><scroll-view class="detail-scroll" scroll-y="true" enhanced><view class="detail-content"><view class="detail-image-wrap" wx:if="{{detail.image}}"><image class="detail-image" src="{{detail.image}}" mode="aspectFit" data-id="{{detail.id}}" binderror="onImageError"/><text class="image-caption" wx:if="{{detail.imageType === 'ai-illustration'}}">AI示意图</text></view><view class="detail-no-image" wx:else>此味尚无药图，亦可开卷识本草。</view><text class="knowledge-label">辨认要点</text><text class="body-copy selectable" selectable>{{detail.recognition}}</text><view class="detail-meta" wx:if="{{detail.sampleLabel}}"><text>图片样本</text><text>{{detail.sampleLabel}}</text></view><view class="detail-meta"><text>别名</text><text>{{detail.aliasesText}}</text></view><view class="detail-meta"><text>原名</text><text>{{detail.originalNameText}}</text></view><text class="knowledge-label">完整功效</text><text class="body-copy selectable" selectable>{{detail.effect}}</text><view class="detail-meta" wx:if="{{detail.usageText}}"><text>药典用途</text><text>{{detail.usageText}}（不作功效）</text></view><text class="body-copy" wx:if="{{detail.effectReason}}">{{detail.effectReason}}。</text><text class="knowledge-label">原药材与炮制关系</text><text class="body-copy">{{detail.processingText}}</text><button wx:for="{{detail.relations}}" wx:key="id" class="relation-row" data-id="{{item.id}}" bindtap="openDetail"><text>{{item.name}}</text><text>{{item.text}} ›</text></button><text class="knowledge-label">资料出处</text><view wx:for="{{detail.sourcesList}}" wx:key="key" class="source-row"><text class="source-label">{{item.label}}</text><text selectable>{{item.citation}}</text><text selectable class="source-locator">{{item.locator}}</text></view><text class="body-copy" wx:if="{{!detail.sourcesList.length}}">资料出处待补充。</text><text class="footnote">本草知识仅供学习，请勿据此自行用药。</text></view></scroll-view></view></view>
 </view>

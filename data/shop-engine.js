@@ -46,7 +46,8 @@ function createRound(pool, roundIndex = 0, reviewIds = [], previousDrawerOrder =
   if (review.some(id => !poolIds.includes(id))) throw new RangeError('复习项包含未准入药材')
   const mode = review.length ? 'review' : 'normal'
   const start = ((roundIndex % poolIds.length) * 6) % poolIds.length
-  const group = Array.from({ length: 6 }, (_, i) => poolIds[(start + i) % poolIds.length])
+  const ordered = roundIndex >= Math.ceil(poolIds.length / 6) ? shuffle(poolIds, random) : poolIds
+  const group = Array.from({ length: 6 }, (_, i) => ordered[(start + i) % poolIds.length])
   const selected = mode === 'review' ? review.slice(0, 6) : group
   const drawers = selected.concat(group, poolIds).filter((id, i, all) => all.indexOf(id) === i).slice(0, 6)
   let drawerIds = shuffle(drawers, random)
@@ -113,6 +114,17 @@ function advance(state) {
   return next
 }
 
+function skipUnavailable(state) {
+  if (state.status !== 'awaiting') return copy(state)
+  const next = copy(state)
+  const id = currentId(next)
+  next.skippedIds = (next.skippedIds || []).concat(id)
+  next.cursor += 1
+  next.status = next.cursor === next.trayIds.length ? 'completed' : 'awaiting'
+  next.lastEvent = { type: 'skip', id }
+  return next
+}
+
 function validateState(state, catalog) {
   if (!state || state.engineVersion !== ENGINE_VERSION) return false
   const { poolIds, drawerIds, trayIds, reviewIds, completedIds, cursor, status, attempts } = state
@@ -124,7 +136,10 @@ function validateState(state, catalog) {
   if (!Number.isSafeInteger(cursor) || cursor < 0 || cursor > trayIds.length) return false
   if (!['awaiting', 'placed', 'completed'].includes(status)) return false
   if ((status === 'completed') !== (cursor === trayIds.length)) return false
-  if (!same(completedIds, trayIds.slice(0, cursor))) return false
+  const skipped = state.skippedIds === undefined ? [] : state.skippedIds
+  const visited = trayIds.slice(0, cursor)
+  if (!unique(skipped) || !skipped.every(id => visited.includes(id))) return false
+  if (!same(completedIds, visited.filter(id => !skipped.includes(id)))) return false
   if (!drawerIds.every(id => poolIds.includes(id)) || !reviewIds.every(id => poolIds.includes(id))) return false
   if (!trayIds.every(id => drawerIds.includes(id))) return false
   if (!attempts || typeof attempts !== 'object' || Array.isArray(attempts)) return false
@@ -135,7 +150,7 @@ function validateState(state, catalog) {
     if (!item || !Number.isSafeInteger(item.wrong) || item.wrong < 0 ||
         !Number.isSafeInteger(item.hints) || item.hints < 0 || typeof item.correct !== 'boolean') return false
     const index = trayIds.indexOf(id)
-    const shouldBeCorrect = index < cursor || (index === cursor && status === 'placed')
+    const shouldBeCorrect = (index < cursor && !skipped.includes(id)) || (index === cursor && status === 'placed')
     if (item.correct !== shouldBeCorrect) return false
     if ((item.wrong > 0 || item.hints > 0) && !reviewIds.includes(id)) return false
   }
@@ -170,6 +185,6 @@ function restoreSnapshot(snapshot, catalog) {
 
 module.exports = {
   ENGINE_VERSION, SNAPSHOT_VERSION, getEligible, search, createRound,
-  currentId, guess, hint, advance, commit: advance,
+  currentId, guess, hint, skipUnavailable, advance, commit: advance,
   validateSnapshot, exportSnapshot, restoreSnapshot
 }
