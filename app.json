@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "本草小药铺",
+    "navigationBarBackgroundColor": "#f4eee1",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f4eee1",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

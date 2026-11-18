@@ -1,0 +1,5604 @@
+{
+  "schemaVersion": 1,
+  "expectedCount": 616,
+  "imported": true,
+  "importProvenance": {
+    "sourceFile": "C:/Users/admin/Documents/Codex/2026-11-14/new-chat/outputs/chp2025-herbs-catalog.json",
+    "kind": "user-supplied-name-catalog",
+    "scope": "仅导入品名目录及原始来源元数据，不代表功效、辨认、炮制关系或实物图片已核验",
+    "missing": ["经核验的药典正文学习素材", "经核验的原生实物图片"]
+  },
+  "source": {
+    "title": "2025年版《中国药典》一部·药材和饮片（品名目录）",
+    "edition": 2025,
+    "noticeUrl": "https://app.www.gov.cn/govdata/gov/202503/26/525844/article.html",
+    "url": "https://www.gov.cn/zhengce/zhengceku/202503/P020250326411104895580.pdf",
+    "mirrorUrl": "https://www.tid.gov.hk/en/tradecircular/files/2025/ci2025281a.pdf",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "scope": "仅含公告附件品名目录中列名的条目。正文内未列入该目录的饮片规格、药典外国家及地方标准、本草及资源名录未合并。catalogIndent / catalogParentId 仅反映原目录的缩进，不能据此认定条目类别或推导完整炮制关系。所有条目仅供图鉴建档，经核对的学习素材另行管理。",
+  "count": 616,
+  "entries": [
+    {
+      "id": "chp2025-0001",
+      "name": "一枝黄花",
+      "catalogLabel": "一枝黄花",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0002",
+      "name": "丁公藤",
+      "catalogLabel": "丁公藤",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0003",
+      "name": "丁香",
+      "catalogLabel": "丁香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0004",
+      "name": "八角茴香",
+      "catalogLabel": "八角茴香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0005",
+      "name": "人工牛黄",
+      "catalogLabel": "人工牛黄",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0006",
+      "name": "人参",
+      "catalogLabel": "人参",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "renshen"
+    },
+    {
+      "id": "chp2025-0007",
+      "name": "人参叶",
+      "catalogLabel": "人参叶",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0008",
+      "name": "儿茶",
+      "catalogLabel": "儿茶",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0009",
+      "name": "九里香",
+      "catalogLabel": "九里香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0010",
+      "name": "九香虫",
+      "catalogLabel": "九香虫",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0011",
+      "name": "刀豆",
+      "catalogLabel": "刀豆",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0012",
+      "name": "三七",
+      "catalogLabel": "三七",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0013",
+      "name": "三白草",
+      "catalogLabel": "三白草",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0014",
+      "name": "三棱",
+      "catalogLabel": "三棱",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0015",
+      "name": "三颗针",
+      "catalogLabel": "三颗针",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0016",
+      "name": "干姜",
+      "catalogLabel": "干姜",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0017",
+      "name": "炮姜",
+      "catalogLabel": "炮姜",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0016"
+    },
+    {
+      "id": "chp2025-0018",
+      "name": "干漆",
+      "catalogLabel": "干漆",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0019",
+      "name": "土木香",
+      "catalogLabel": "土木香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0020",
+      "name": "土贝母",
+      "catalogLabel": "土贝母",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0021",
+      "name": "土荆皮",
+      "catalogLabel": "土荆皮",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0022",
+      "name": "土茯苓",
+      "catalogLabel": "土茯苓",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0023",
+      "name": "土鳖虫",
+      "catalogLabel": "土鳖虫(䗪虫)",
+      "aliases": [
+        "䗪虫"
+      ],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0024",
+      "name": "大叶紫珠",
+      "catalogLabel": "大叶紫珠",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0025",
+      "name": "大血藤",
+      "catalogLabel": "大血藤",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0026",
+      "name": "大豆黄卷",
+      "catalogLabel": "大豆黄卷",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0027",
+      "name": "大皂角",
+      "catalogLabel": "大皂角",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0028",
+      "name": "大青叶",
+      "catalogLabel": "大青叶",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0029",
+      "name": "大青盐",
+      "catalogLabel": "大青盐",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0030",
+      "name": "大枣",
+      "catalogLabel": "大枣",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "dazao"
+    },
+    {
+      "id": "chp2025-0031",
+      "name": "大黄",
+      "catalogLabel": "大黄",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0032",
+      "name": "大蒜",
+      "catalogLabel": "大蒜",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0033",
+      "name": "大蓟",
+      "catalogLabel": "大蓟",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0034",
+      "name": "大蓟炭",
+      "catalogLabel": "大蓟炭",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0033"
+    },
+    {
+      "id": "chp2025-0035",
+      "name": "大腹皮",
+      "catalogLabel": "大腹皮",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0036",
+      "name": "山麦冬",
+      "catalogLabel": "山麦冬",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0037",
+      "name": "山豆根",
+      "catalogLabel": "山豆根",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0038",
+      "name": "山茱萸",
+      "catalogLabel": "山茱萸",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0039",
+      "name": "山药",
+      "catalogLabel": "山药",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0040",
+      "name": "山柰",
+      "catalogLabel": "山柰",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0041",
+      "name": "山香圆叶",
+      "catalogLabel": "山香圆叶",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0042",
+      "name": "山银花",
+      "catalogLabel": "山银花",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0043",
+      "name": "山楂",
+      "catalogLabel": "山楂",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "shanzha"
+    },
+    {
+      "id": "chp2025-0044",
+      "name": "山楂叶",
+      "catalogLabel": "山楂叶",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0045",
+      "name": "山慈菇",
+      "catalogLabel": "山慈菇",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0046",
+      "name": "千年健",
+      "catalogLabel": "千年健",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0047",
+      "name": "千里光",
+      "catalogLabel": "千里光",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0048",
+      "name": "千金子",
+      "catalogLabel": "千金子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0049",
+      "name": "千金子霜",
+      "catalogLabel": "千金子霜",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0048"
+    },
+    {
+      "id": "chp2025-0050",
+      "name": "川木香",
+      "catalogLabel": "川木香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0051",
+      "name": "川木通",
+      "catalogLabel": "川木通",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0052",
+      "name": "川贝母",
+      "catalogLabel": "川贝母",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0053",
+      "name": "川牛膝",
+      "catalogLabel": "川牛膝",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0054",
+      "name": "川乌",
+      "catalogLabel": "川乌",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0055",
+      "name": "制川乌",
+      "catalogLabel": "制川乌",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0054"
+    },
+    {
+      "id": "chp2025-0056",
+      "name": "川芎",
+      "catalogLabel": "川芎",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0057",
+      "name": "川射干",
+      "catalogLabel": "川射干",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0058",
+      "name": "川楝子",
+      "catalogLabel": "川楝子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0059",
+      "name": "广东紫珠",
+      "catalogLabel": "广东紫珠",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0060",
+      "name": "广枣",
+      "catalogLabel": "广枣",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0061",
+      "name": "广金钱草",
+      "catalogLabel": "广金钱草",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0062",
+      "name": "广藿香",
+      "catalogLabel": "广藿香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0063",
+      "name": "女贞子",
+      "catalogLabel": "女贞子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0064",
+      "name": "小叶莲",
+      "catalogLabel": "小叶莲",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0065",
+      "name": "小驳骨",
+      "catalogLabel": "小驳骨",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0066",
+      "name": "小茴香",
+      "catalogLabel": "小茴香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0067",
+      "name": "小通草",
+      "catalogLabel": "小通草",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0068",
+      "name": "小蓟",
+      "catalogLabel": "小蓟",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0069",
+      "name": "飞扬草",
+      "catalogLabel": "飞扬草",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0070",
+      "name": "马齿苋",
+      "catalogLabel": "马齿苋",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0071",
+      "name": "马勃",
+      "catalogLabel": "马勃",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0072",
+      "name": "马钱子",
+      "catalogLabel": "马钱子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0073",
+      "name": "马钱子粉",
+      "catalogLabel": "马钱子粉",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0072"
+    },
+    {
+      "id": "chp2025-0074",
+      "name": "马鞭草",
+      "catalogLabel": "马鞭草",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0075",
+      "name": "王不留行",
+      "catalogLabel": "王不留行",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0076",
+      "name": "天山雪莲",
+      "catalogLabel": "天山雪莲",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0077",
+      "name": "天仙子",
+      "catalogLabel": "天仙子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0078",
+      "name": "天冬",
+      "catalogLabel": "天冬",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0079",
+      "name": "天花粉",
+      "catalogLabel": "天花粉",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0080",
+      "name": "天竺黄",
+      "catalogLabel": "天竺黄",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0081",
+      "name": "天南星",
+      "catalogLabel": "天南星",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0082",
+      "name": "制天南星",
+      "catalogLabel": "制天南星",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0081"
+    },
+    {
+      "id": "chp2025-0083",
+      "name": "天麻",
+      "catalogLabel": "天麻",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0084",
+      "name": "天葵子",
+      "catalogLabel": "天葵子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0085",
+      "name": "天然冰片",
+      "catalogLabel": "天然冰片(右旋龙脑)",
+      "aliases": [
+        "右旋龙脑"
+      ],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0086",
+      "name": "云芝",
+      "catalogLabel": "云芝",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0087",
+      "name": "木瓜",
+      "catalogLabel": "木瓜",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0088",
+      "name": "木芙蓉叶",
+      "catalogLabel": "木芙蓉叶",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0089",
+      "name": "木香",
+      "catalogLabel": "木香",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0090",
+      "name": "木贼",
+      "catalogLabel": "木贼",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0091",
+      "name": "木通",
+      "catalogLabel": "木通",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0092",
+      "name": "木棉花",
+      "catalogLabel": "木棉花",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0093",
+      "name": "木蝴蝶",
+      "catalogLabel": "木蝴蝶",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0094",
+      "name": "木鳖子",
+      "catalogLabel": "木鳖子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0095",
+      "name": "五加皮",
+      "catalogLabel": "五加皮",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0096",
+      "name": "五味子",
+      "catalogLabel": "五味子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0097",
+      "name": "五倍子",
+      "catalogLabel": "五倍子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0098",
+      "name": "太子参",
+      "catalogLabel": "太子参",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0099",
+      "name": "车前子",
+      "catalogLabel": "车前子",
+      "aliases": [],
+      "sourcePage": 1,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0100",
+      "name": "车前草",
+      "catalogLabel": "车前草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0101",
+      "name": "瓦松",
+      "catalogLabel": "瓦松",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0102",
+      "name": "瓦楞子",
+      "catalogLabel": "瓦楞子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0103",
+      "name": "牛黄",
+      "catalogLabel": "牛黄",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0104",
+      "name": "牛蒡子",
+      "catalogLabel": "牛蒡子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0105",
+      "name": "牛膝",
+      "catalogLabel": "牛膝",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0106",
+      "name": "毛诃子",
+      "catalogLabel": "毛诃子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0107",
+      "name": "升麻",
+      "catalogLabel": "升麻",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0108",
+      "name": "片姜黄",
+      "catalogLabel": "片姜黄",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0109",
+      "name": "化橘红",
+      "catalogLabel": "化橘红",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0110",
+      "name": "月季花",
+      "catalogLabel": "月季花",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0111",
+      "name": "丹参",
+      "catalogLabel": "丹参",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0112",
+      "name": "乌药",
+      "catalogLabel": "乌药",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0113",
+      "name": "乌梢蛇",
+      "catalogLabel": "乌梢蛇",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0114",
+      "name": "乌梅",
+      "catalogLabel": "乌梅",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0115",
+      "name": "火麻仁",
+      "catalogLabel": "火麻仁",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0116",
+      "name": "巴豆",
+      "catalogLabel": "巴豆",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0117",
+      "name": "巴豆霜",
+      "catalogLabel": "巴豆霜",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0116"
+    },
+    {
+      "id": "chp2025-0118",
+      "name": "巴戟天",
+      "catalogLabel": "巴戟天",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0119",
+      "name": "水飞蓟",
+      "catalogLabel": "水飞蓟",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0120",
+      "name": "水牛角",
+      "catalogLabel": "水牛角",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0121",
+      "name": "水红花子",
+      "catalogLabel": "水红花子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0122",
+      "name": "水蛭",
+      "catalogLabel": "水蛭",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0123",
+      "name": "玉竹",
+      "catalogLabel": "玉竹",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0124",
+      "name": "功劳木",
+      "catalogLabel": "功劳木",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0125",
+      "name": "甘松",
+      "catalogLabel": "甘松",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0126",
+      "name": "甘草",
+      "catalogLabel": "甘草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "gancao"
+    },
+    {
+      "id": "chp2025-0127",
+      "name": "炙甘草",
+      "catalogLabel": "炙甘草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0126"
+    },
+    {
+      "id": "chp2025-0128",
+      "name": "甘遂",
+      "catalogLabel": "甘遂",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0129",
+      "name": "艾片",
+      "catalogLabel": "艾片(左旋龙脑)",
+      "aliases": [
+        "左旋龙脑"
+      ],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0130",
+      "name": "艾叶",
+      "catalogLabel": "艾叶",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0131",
+      "name": "石韦",
+      "catalogLabel": "石韦",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0132",
+      "name": "石吊兰",
+      "catalogLabel": "石吊兰",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0133",
+      "name": "石决明",
+      "catalogLabel": "石决明",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0134",
+      "name": "石菖蒲",
+      "catalogLabel": "石菖蒲",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0135",
+      "name": "石斛",
+      "catalogLabel": "石斛",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0136",
+      "name": "石榴皮",
+      "catalogLabel": "石榴皮",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0137",
+      "name": "石膏",
+      "catalogLabel": "石膏",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0138",
+      "name": "煅石膏",
+      "catalogLabel": "煅石膏",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0137"
+    },
+    {
+      "id": "chp2025-0139",
+      "name": "布渣叶",
+      "catalogLabel": "布渣叶",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0140",
+      "name": "龙胆",
+      "catalogLabel": "龙胆",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0141",
+      "name": "龙眼肉",
+      "catalogLabel": "龙眼肉",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0142",
+      "name": "龙脷叶",
+      "catalogLabel": "龙脷叶",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0143",
+      "name": "平贝母",
+      "catalogLabel": "平贝母",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0144",
+      "name": "北刘寄奴",
+      "catalogLabel": "北刘寄奴",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0145",
+      "name": "北豆根",
+      "catalogLabel": "北豆根",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0146",
+      "name": "北沙参",
+      "catalogLabel": "北沙参",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0147",
+      "name": "四季青",
+      "catalogLabel": "四季青",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0148",
+      "name": "生姜",
+      "catalogLabel": "生姜",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0149",
+      "name": "仙茅",
+      "catalogLabel": "仙茅",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0150",
+      "name": "仙鹤草",
+      "catalogLabel": "仙鹤草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0151",
+      "name": "白及",
+      "catalogLabel": "白及",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0152",
+      "name": "白术",
+      "catalogLabel": "白术",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0153",
+      "name": "白头翁",
+      "catalogLabel": "白头翁",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0154",
+      "name": "白芍",
+      "catalogLabel": "白芍",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0155",
+      "name": "白芷",
+      "catalogLabel": "白芷",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0156",
+      "name": "白附子",
+      "catalogLabel": "白附子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0157",
+      "name": "白茅根",
+      "catalogLabel": "白茅根",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0158",
+      "name": "白矾",
+      "catalogLabel": "白矾",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0159",
+      "name": "白果",
+      "catalogLabel": "白果",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0160",
+      "name": "白屈菜",
+      "catalogLabel": "白屈菜",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0161",
+      "name": "白前",
+      "catalogLabel": "白前",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0162",
+      "name": "白扁豆",
+      "catalogLabel": "白扁豆",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0163",
+      "name": "白蔹",
+      "catalogLabel": "白蔹",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0164",
+      "name": "白鲜皮",
+      "catalogLabel": "白鲜皮",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0165",
+      "name": "白薇",
+      "catalogLabel": "白薇",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0166",
+      "name": "瓜子金",
+      "catalogLabel": "瓜子金",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0167",
+      "name": "瓜蒌",
+      "catalogLabel": "瓜蒌",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0168",
+      "name": "瓜蒌子",
+      "catalogLabel": "瓜蒌子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0169",
+      "name": "炒瓜蒌子",
+      "catalogLabel": "炒瓜蒌子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0168"
+    },
+    {
+      "id": "chp2025-0170",
+      "name": "瓜蒌皮",
+      "catalogLabel": "瓜蒌皮",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0171",
+      "name": "冬瓜皮",
+      "catalogLabel": "冬瓜皮",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0172",
+      "name": "冬虫夏草",
+      "catalogLabel": "冬虫夏草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0173",
+      "name": "冬凌草",
+      "catalogLabel": "冬凌草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0174",
+      "name": "冬葵果",
+      "catalogLabel": "冬葵果",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0175",
+      "name": "玄明粉",
+      "catalogLabel": "玄明粉",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0176",
+      "name": "玄参",
+      "catalogLabel": "玄参",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0177",
+      "name": "半边莲",
+      "catalogLabel": "半边莲",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0178",
+      "name": "半枝莲",
+      "catalogLabel": "半枝莲",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0179",
+      "name": "半夏",
+      "catalogLabel": "半夏",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0180",
+      "name": "法半夏",
+      "catalogLabel": "法半夏",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0179"
+    },
+    {
+      "id": "chp2025-0181",
+      "name": "姜半夏",
+      "catalogLabel": "姜半夏",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0179"
+    },
+    {
+      "id": "chp2025-0182",
+      "name": "清半夏",
+      "catalogLabel": "清半夏",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0179"
+    },
+    {
+      "id": "chp2025-0183",
+      "name": "母丁香",
+      "catalogLabel": "母丁香",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0184",
+      "name": "丝瓜络",
+      "catalogLabel": "丝瓜络",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0185",
+      "name": "老鹳草",
+      "catalogLabel": "老鹳草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0186",
+      "name": "地龙",
+      "catalogLabel": "地龙",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0187",
+      "name": "地枫皮",
+      "catalogLabel": "地枫皮",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0188",
+      "name": "地肤子",
+      "catalogLabel": "地肤子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0189",
+      "name": "地骨皮",
+      "catalogLabel": "地骨皮",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0190",
+      "name": "地黄",
+      "catalogLabel": "地黄",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0191",
+      "name": "熟地黄",
+      "catalogLabel": "熟地黄",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0190"
+    },
+    {
+      "id": "chp2025-0192",
+      "name": "地榆",
+      "catalogLabel": "地榆",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0193",
+      "name": "地锦草",
+      "catalogLabel": "地锦草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0194",
+      "name": "芒硝",
+      "catalogLabel": "芒硝",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0195",
+      "name": "亚乎奴",
+      "catalogLabel": "亚乎奴(锡生藤)",
+      "aliases": [
+        "锡生藤"
+      ],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0196",
+      "name": "亚麻子",
+      "catalogLabel": "亚麻子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0197",
+      "name": "西瓜霜",
+      "catalogLabel": "西瓜霜",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0198",
+      "name": "西红花",
+      "catalogLabel": "西红花",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0199",
+      "name": "西青果",
+      "catalogLabel": "西青果",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0200",
+      "name": "西河柳",
+      "catalogLabel": "西河柳",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0201",
+      "name": "西洋参",
+      "catalogLabel": "西洋参",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0202",
+      "name": "百合",
+      "catalogLabel": "百合",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0203",
+      "name": "百部",
+      "catalogLabel": "百部",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0204",
+      "name": "当归",
+      "catalogLabel": "当归",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "danggui"
+    },
+    {
+      "id": "chp2025-0205",
+      "name": "当药",
+      "catalogLabel": "当药",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0206",
+      "name": "虫白蜡",
+      "catalogLabel": "虫白蜡",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0207",
+      "name": "肉苁蓉",
+      "catalogLabel": "肉苁蓉",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0208",
+      "name": "肉豆蔻",
+      "catalogLabel": "肉豆蔻",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0209",
+      "name": "肉桂",
+      "catalogLabel": "肉桂",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0210",
+      "name": "朱砂",
+      "catalogLabel": "朱砂",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0211",
+      "name": "朱砂根",
+      "catalogLabel": "朱砂根",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0212",
+      "name": "竹节参",
+      "catalogLabel": "竹节参",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0213",
+      "name": "竹茹",
+      "catalogLabel": "竹茹",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0214",
+      "name": "延胡索",
+      "catalogLabel": "延胡索(元胡)",
+      "aliases": [
+        "元胡"
+      ],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0215",
+      "name": "华山参",
+      "catalogLabel": "华山参",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0216",
+      "name": "自然铜",
+      "catalogLabel": "自然铜",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0217",
+      "name": "伊贝母",
+      "catalogLabel": "伊贝母",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0218",
+      "name": "血余炭",
+      "catalogLabel": "血余炭",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0219",
+      "name": "血竭",
+      "catalogLabel": "血竭",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0220",
+      "name": "全蝎",
+      "catalogLabel": "全蝎",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0221",
+      "name": "合欢皮",
+      "catalogLabel": "合欢皮",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0222",
+      "name": "合欢花",
+      "catalogLabel": "合欢花",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0223",
+      "name": "决明子",
+      "catalogLabel": "决明子",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0224",
+      "name": "冰片",
+      "catalogLabel": "冰片(合成龙脑)",
+      "aliases": [
+        "合成龙脑"
+      ],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0225",
+      "name": "关黄柏",
+      "catalogLabel": "关黄柏",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0226",
+      "name": "灯心草",
+      "catalogLabel": "灯心草",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0227",
+      "name": "灯盏细辛",
+      "catalogLabel": "灯盏细辛(灯盏花)",
+      "aliases": [
+        "灯盏花"
+      ],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0228",
+      "name": "安息香",
+      "catalogLabel": "安息香",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0229",
+      "name": "防己",
+      "catalogLabel": "防己",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0230",
+      "name": "防风",
+      "catalogLabel": "防风",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0231",
+      "name": "红大戟",
+      "catalogLabel": "红大戟",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0232",
+      "name": "红花",
+      "catalogLabel": "红花",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0233",
+      "name": "红花龙胆",
+      "catalogLabel": "红花龙胆",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0234",
+      "name": "红芪",
+      "catalogLabel": "红芪",
+      "aliases": [],
+      "sourcePage": 2,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0235",
+      "name": "炙红芪",
+      "catalogLabel": "炙红芪",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0234"
+    },
+    {
+      "id": "chp2025-0236",
+      "name": "红豆蔻",
+      "catalogLabel": "红豆蔻",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0237",
+      "name": "红参",
+      "catalogLabel": "红参",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0238",
+      "name": "红粉",
+      "catalogLabel": "红粉",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0239",
+      "name": "红景天",
+      "catalogLabel": "红景天",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0240",
+      "name": "麦冬",
+      "catalogLabel": "麦冬",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0241",
+      "name": "麦芽",
+      "catalogLabel": "麦芽",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0242",
+      "name": "远志",
+      "catalogLabel": "远志",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0243",
+      "name": "赤小豆",
+      "catalogLabel": "赤小豆",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0244",
+      "name": "赤石脂",
+      "catalogLabel": "赤石脂",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0245",
+      "name": "赤芍",
+      "catalogLabel": "赤芍",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0246",
+      "name": "芫花",
+      "catalogLabel": "芫花",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0247",
+      "name": "花椒",
+      "catalogLabel": "花椒",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0248",
+      "name": "花蕊石",
+      "catalogLabel": "花蕊石",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0249",
+      "name": "芥子",
+      "catalogLabel": "芥子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0250",
+      "name": "苍术",
+      "catalogLabel": "苍术",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0251",
+      "name": "苍耳子",
+      "catalogLabel": "苍耳子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0252",
+      "name": "芡实",
+      "catalogLabel": "芡实",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0253",
+      "name": "芦荟",
+      "catalogLabel": "芦荟",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0254",
+      "name": "芦根",
+      "catalogLabel": "芦根",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0255",
+      "name": "苏木",
+      "catalogLabel": "苏木",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0256",
+      "name": "苏合香",
+      "catalogLabel": "苏合香",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0257",
+      "name": "杜仲",
+      "catalogLabel": "杜仲",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0258",
+      "name": "杜仲叶",
+      "catalogLabel": "杜仲叶",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0259",
+      "name": "杠板归",
+      "catalogLabel": "杠板归",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0260",
+      "name": "巫山淫羊藿",
+      "catalogLabel": "巫山淫羊藿",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0261",
+      "name": "豆蔻",
+      "catalogLabel": "豆蔻",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0262",
+      "name": "两头尖",
+      "catalogLabel": "两头尖",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0263",
+      "name": "两面针",
+      "catalogLabel": "两面针",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0264",
+      "name": "连钱草",
+      "catalogLabel": "连钱草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0265",
+      "name": "连翘",
+      "catalogLabel": "连翘",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0266",
+      "name": "吴茱萸",
+      "catalogLabel": "吴茱萸",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0267",
+      "name": "牡丹皮",
+      "catalogLabel": "牡丹皮",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0268",
+      "name": "牡荆叶",
+      "catalogLabel": "牡荆叶",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0269",
+      "name": "牡蛎",
+      "catalogLabel": "牡蛎",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0270",
+      "name": "体外培育牛黄",
+      "catalogLabel": "体外培育牛黄",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0271",
+      "name": "何首乌",
+      "catalogLabel": "何首乌",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0272",
+      "name": "制何首乌",
+      "catalogLabel": "制何首乌",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0271"
+    },
+    {
+      "id": "chp2025-0273",
+      "name": "伸筋草",
+      "catalogLabel": "伸筋草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0274",
+      "name": "皂角刺",
+      "catalogLabel": "皂角刺",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0275",
+      "name": "皂矾",
+      "catalogLabel": "皂矾(绿矾)",
+      "aliases": [
+        "绿矾"
+      ],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0276",
+      "name": "佛手",
+      "catalogLabel": "佛手",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0277",
+      "name": "余甘子",
+      "catalogLabel": "余甘子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0278",
+      "name": "谷芽",
+      "catalogLabel": "谷芽",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0279",
+      "name": "谷精草",
+      "catalogLabel": "谷精草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0280",
+      "name": "龟甲",
+      "catalogLabel": "龟甲",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0281",
+      "name": "龟甲胶",
+      "catalogLabel": "龟甲胶",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0282",
+      "name": "辛夷",
+      "catalogLabel": "辛夷",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0283",
+      "name": "羌活",
+      "catalogLabel": "羌活",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0284",
+      "name": "沙苑子",
+      "catalogLabel": "沙苑子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0285",
+      "name": "沙棘",
+      "catalogLabel": "沙棘",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0286",
+      "name": "沉香",
+      "catalogLabel": "沉香",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0287",
+      "name": "没药",
+      "catalogLabel": "没药",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0288",
+      "name": "诃子",
+      "catalogLabel": "诃子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0289",
+      "name": "补骨脂",
+      "catalogLabel": "补骨脂",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0290",
+      "name": "灵芝",
+      "catalogLabel": "灵芝",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0291",
+      "name": "阿胶",
+      "catalogLabel": "阿胶",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0292",
+      "name": "阿魏",
+      "catalogLabel": "阿魏",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0293",
+      "name": "陈皮",
+      "catalogLabel": "陈皮",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "chenpi"
+    },
+    {
+      "id": "chp2025-0294",
+      "name": "附子",
+      "catalogLabel": "附子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0295",
+      "name": "忍冬藤",
+      "catalogLabel": "忍冬藤",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0296",
+      "name": "鸡内金",
+      "catalogLabel": "鸡内金",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0297",
+      "name": "鸡血藤",
+      "catalogLabel": "鸡血藤",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0298",
+      "name": "鸡骨草",
+      "catalogLabel": "鸡骨草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0299",
+      "name": "鸡冠花",
+      "catalogLabel": "鸡冠花",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0300",
+      "name": "青风藤",
+      "catalogLabel": "青风藤",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0301",
+      "name": "青叶胆",
+      "catalogLabel": "青叶胆",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0302",
+      "name": "青皮",
+      "catalogLabel": "青皮",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0303",
+      "name": "青果",
+      "catalogLabel": "青果",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0304",
+      "name": "青葙子",
+      "catalogLabel": "青葙子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0305",
+      "name": "青蒿",
+      "catalogLabel": "青蒿",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0306",
+      "name": "青礞石",
+      "catalogLabel": "青礞石",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0307",
+      "name": "青黛",
+      "catalogLabel": "青黛",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0308",
+      "name": "玫瑰花",
+      "catalogLabel": "玫瑰花",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0309",
+      "name": "苦木",
+      "catalogLabel": "苦木",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0310",
+      "name": "苦玄参",
+      "catalogLabel": "苦玄参",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0311",
+      "name": "苦地丁",
+      "catalogLabel": "苦地丁",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0312",
+      "name": "苦杏仁",
+      "catalogLabel": "苦杏仁",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0313",
+      "name": "苦参",
+      "catalogLabel": "苦参",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0314",
+      "name": "苦楝皮",
+      "catalogLabel": "苦楝皮",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0315",
+      "name": "苘麻子",
+      "catalogLabel": "苘麻子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0316",
+      "name": "枇杷叶",
+      "catalogLabel": "枇杷叶",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0317",
+      "name": "板蓝根",
+      "catalogLabel": "板蓝根",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0318",
+      "name": "松花粉",
+      "catalogLabel": "松花粉",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0319",
+      "name": "枫香脂",
+      "catalogLabel": "枫香脂",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0320",
+      "name": "刺五加",
+      "catalogLabel": "刺五加",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0321",
+      "name": "郁李仁",
+      "catalogLabel": "郁李仁",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0322",
+      "name": "郁金",
+      "catalogLabel": "郁金",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0323",
+      "name": "虎杖",
+      "catalogLabel": "虎杖",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0324",
+      "name": "昆布",
+      "catalogLabel": "昆布",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0325",
+      "name": "明党参",
+      "catalogLabel": "明党参",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0326",
+      "name": "岩白菜",
+      "catalogLabel": "岩白菜",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0327",
+      "name": "罗布麻叶",
+      "catalogLabel": "罗布麻叶",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0328",
+      "name": "罗汉果",
+      "catalogLabel": "罗汉果",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0329",
+      "name": "知母",
+      "catalogLabel": "知母",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0330",
+      "name": "垂盆草",
+      "catalogLabel": "垂盆草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0331",
+      "name": "委陵菜",
+      "catalogLabel": "委陵菜",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0332",
+      "name": "使君子",
+      "catalogLabel": "使君子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0333",
+      "name": "侧柏叶",
+      "catalogLabel": "侧柏叶",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0334",
+      "name": "佩兰",
+      "catalogLabel": "佩兰",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0335",
+      "name": "金龙胆草",
+      "catalogLabel": "金龙胆草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0336",
+      "name": "金果榄",
+      "catalogLabel": "金果榄",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0337",
+      "name": "金沸草",
+      "catalogLabel": "金沸草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0338",
+      "name": "金荞麦",
+      "catalogLabel": "金荞麦",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0339",
+      "name": "金钱白花蛇",
+      "catalogLabel": "金钱白花蛇",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0340",
+      "name": "金钱草",
+      "catalogLabel": "金钱草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0341",
+      "name": "金铁锁",
+      "catalogLabel": "金铁锁",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0342",
+      "name": "金银花",
+      "catalogLabel": "金银花",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "jinyinhua"
+    },
+    {
+      "id": "chp2025-0343",
+      "name": "金樱子",
+      "catalogLabel": "金樱子",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0344",
+      "name": "金礞石",
+      "catalogLabel": "金礞石",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0345",
+      "name": "乳香",
+      "catalogLabel": "乳香",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0346",
+      "name": "肿节风",
+      "catalogLabel": "肿节风",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0347",
+      "name": "鱼腥草",
+      "catalogLabel": "鱼腥草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0348",
+      "name": "狗脊",
+      "catalogLabel": "狗脊",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0349",
+      "name": "京大戟",
+      "catalogLabel": "京大戟",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0350",
+      "name": "闹羊花",
+      "catalogLabel": "闹羊花",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0351",
+      "name": "卷柏",
+      "catalogLabel": "卷柏",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0352",
+      "name": "炉甘石",
+      "catalogLabel": "炉甘石",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0353",
+      "name": "油松节",
+      "catalogLabel": "油松节",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0354",
+      "name": "泽兰",
+      "catalogLabel": "泽兰",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0355",
+      "name": "泽泻",
+      "catalogLabel": "泽泻",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0356",
+      "name": "降香",
+      "catalogLabel": "降香",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0357",
+      "name": "细辛",
+      "catalogLabel": "细辛",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0358",
+      "name": "贯叶金丝桃",
+      "catalogLabel": "贯叶金丝桃",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0359",
+      "name": "珍珠",
+      "catalogLabel": "珍珠",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0360",
+      "name": "珍珠母",
+      "catalogLabel": "珍珠母",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0361",
+      "name": "荆芥",
+      "catalogLabel": "荆芥",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0362",
+      "name": "荆芥炭",
+      "catalogLabel": "荆芥炭",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0361"
+    },
+    {
+      "id": "chp2025-0363",
+      "name": "荆芥穗",
+      "catalogLabel": "荆芥穗",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0364",
+      "name": "荆芥穗炭",
+      "catalogLabel": "荆芥穗炭",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0363"
+    },
+    {
+      "id": "chp2025-0365",
+      "name": "茜草",
+      "catalogLabel": "茜草",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0366",
+      "name": "荜茇",
+      "catalogLabel": "荜茇",
+      "aliases": [],
+      "sourcePage": 3,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0367",
+      "name": "荜澄茄",
+      "catalogLabel": "荜澄茄",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0368",
+      "name": "草乌",
+      "catalogLabel": "草乌",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0369",
+      "name": "制草乌",
+      "catalogLabel": "制草乌",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0368"
+    },
+    {
+      "id": "chp2025-0370",
+      "name": "草乌叶",
+      "catalogLabel": "草乌叶",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0371",
+      "name": "草豆蔻",
+      "catalogLabel": "草豆蔻",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0372",
+      "name": "草果",
+      "catalogLabel": "草果",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0373",
+      "name": "茵陈",
+      "catalogLabel": "茵陈",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0374",
+      "name": "茯苓",
+      "catalogLabel": "茯苓",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "fuling"
+    },
+    {
+      "id": "chp2025-0375",
+      "name": "茯苓皮",
+      "catalogLabel": "茯苓皮",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0376",
+      "name": "茺蔚子",
+      "catalogLabel": "茺蔚子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0377",
+      "name": "胡芦巴",
+      "catalogLabel": "胡芦巴",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0378",
+      "name": "胡黄连",
+      "catalogLabel": "胡黄连",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0379",
+      "name": "胡椒",
+      "catalogLabel": "胡椒",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0380",
+      "name": "荔枝核",
+      "catalogLabel": "荔枝核",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0381",
+      "name": "南五味子",
+      "catalogLabel": "南五味子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0382",
+      "name": "南沙参",
+      "catalogLabel": "南沙参",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0383",
+      "name": "南板蓝根",
+      "catalogLabel": "南板蓝根",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0384",
+      "name": "南鹤虱",
+      "catalogLabel": "南鹤虱",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0385",
+      "name": "枳壳",
+      "catalogLabel": "枳壳",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0386",
+      "name": "枳实",
+      "catalogLabel": "枳实",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0387",
+      "name": "柏子仁",
+      "catalogLabel": "柏子仁",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0388",
+      "name": "栀子",
+      "catalogLabel": "栀子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0389",
+      "name": "焦栀子",
+      "catalogLabel": "焦栀子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0388"
+    },
+    {
+      "id": "chp2025-0390",
+      "name": "枸杞子",
+      "catalogLabel": "枸杞子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "gouqi",
+      "searchAliases": [
+        "枸杞"
+      ]
+    },
+    {
+      "id": "chp2025-0391",
+      "name": "枸骨叶",
+      "catalogLabel": "枸骨叶",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0392",
+      "name": "柿蒂",
+      "catalogLabel": "柿蒂",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0393",
+      "name": "威灵仙",
+      "catalogLabel": "威灵仙",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0394",
+      "name": "厚朴",
+      "catalogLabel": "厚朴",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0395",
+      "name": "厚朴花",
+      "catalogLabel": "厚朴花",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0396",
+      "name": "砂仁",
+      "catalogLabel": "砂仁",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0397",
+      "name": "牵牛子",
+      "catalogLabel": "牵牛子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0398",
+      "name": "轻粉",
+      "catalogLabel": "轻粉",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0399",
+      "name": "鸦胆子",
+      "catalogLabel": "鸦胆子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0400",
+      "name": "韭菜子",
+      "catalogLabel": "韭菜子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0401",
+      "name": "哈蟆油",
+      "catalogLabel": "哈蟆油",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0402",
+      "name": "骨碎补",
+      "catalogLabel": "骨碎补",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0403",
+      "name": "钟乳石",
+      "catalogLabel": "钟乳石",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0404",
+      "name": "钩藤",
+      "catalogLabel": "钩藤",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0405",
+      "name": "香加皮",
+      "catalogLabel": "香加皮",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0406",
+      "name": "香附",
+      "catalogLabel": "香附",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0407",
+      "name": "香橼",
+      "catalogLabel": "香橼",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0408",
+      "name": "香薷",
+      "catalogLabel": "香薷",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0409",
+      "name": "重楼",
+      "catalogLabel": "重楼",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0410",
+      "name": "禹州漏芦",
+      "catalogLabel": "禹州漏芦",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0411",
+      "name": "禹余粮",
+      "catalogLabel": "禹余粮",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0412",
+      "name": "胆南星",
+      "catalogLabel": "胆南星",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0413",
+      "name": "胖大海",
+      "catalogLabel": "胖大海",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0414",
+      "name": "独一味",
+      "catalogLabel": "独一味",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0415",
+      "name": "独活",
+      "catalogLabel": "独活",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0416",
+      "name": "急性子",
+      "catalogLabel": "急性子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0417",
+      "name": "姜黄",
+      "catalogLabel": "姜黄",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0418",
+      "name": "前胡",
+      "catalogLabel": "前胡",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0419",
+      "name": "首乌藤",
+      "catalogLabel": "首乌藤",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0420",
+      "name": "洪连",
+      "catalogLabel": "洪连",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0421",
+      "name": "洋金花",
+      "catalogLabel": "洋金花",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0422",
+      "name": "穿山龙",
+      "catalogLabel": "穿山龙",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0423",
+      "name": "穿心莲",
+      "catalogLabel": "穿心莲",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0424",
+      "name": "络石藤",
+      "catalogLabel": "络石藤",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0425",
+      "name": "秦艽",
+      "catalogLabel": "秦艽",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0426",
+      "name": "秦皮",
+      "catalogLabel": "秦皮",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0427",
+      "name": "珠子参",
+      "catalogLabel": "珠子参",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0428",
+      "name": "莱菔子",
+      "catalogLabel": "莱菔子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0429",
+      "name": "莲子",
+      "catalogLabel": "莲子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "lianzi"
+    },
+    {
+      "id": "chp2025-0430",
+      "name": "莲子心",
+      "catalogLabel": "莲子心",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0431",
+      "name": "莲房",
+      "catalogLabel": "莲房",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0432",
+      "name": "莲须",
+      "catalogLabel": "莲须",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0433",
+      "name": "莪术",
+      "catalogLabel": "莪术",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0434",
+      "name": "荷叶",
+      "catalogLabel": "荷叶",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0435",
+      "name": "桂枝",
+      "catalogLabel": "桂枝",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0436",
+      "name": "桔梗",
+      "catalogLabel": "桔梗",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0437",
+      "name": "桃仁",
+      "catalogLabel": "桃仁",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0438",
+      "name": "桃枝",
+      "catalogLabel": "桃枝",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0439",
+      "name": "核桃仁",
+      "catalogLabel": "核桃仁",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0440",
+      "name": "夏天无",
+      "catalogLabel": "夏天无",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0441",
+      "name": "夏枯草",
+      "catalogLabel": "夏枯草",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0442",
+      "name": "柴胡",
+      "catalogLabel": "柴胡",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0443",
+      "name": "党参",
+      "catalogLabel": "党参",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0444",
+      "name": "鸭跖草",
+      "catalogLabel": "鸭跖草",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0445",
+      "name": "铁皮石斛",
+      "catalogLabel": "铁皮石斛",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0446",
+      "name": "积雪草",
+      "catalogLabel": "积雪草",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0447",
+      "name": "臭灵丹草",
+      "catalogLabel": "臭灵丹草",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0448",
+      "name": "射干",
+      "catalogLabel": "射干",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0449",
+      "name": "徐长卿",
+      "catalogLabel": "徐长卿",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0450",
+      "name": "狼毒",
+      "catalogLabel": "狼毒",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0451",
+      "name": "凌霄花",
+      "catalogLabel": "凌霄花",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0452",
+      "name": "高山辣根菜",
+      "catalogLabel": "高山辣根菜",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0453",
+      "name": "高良姜",
+      "catalogLabel": "高良姜",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0454",
+      "name": "拳参",
+      "catalogLabel": "拳参",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0455",
+      "name": "粉萆薢",
+      "catalogLabel": "粉萆薢",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0456",
+      "name": "粉葛",
+      "catalogLabel": "粉葛",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0457",
+      "name": "益母草",
+      "catalogLabel": "益母草",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0458",
+      "name": "益智",
+      "catalogLabel": "益智",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0459",
+      "name": "浙贝母",
+      "catalogLabel": "浙贝母",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0460",
+      "name": "娑罗子",
+      "catalogLabel": "娑罗子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0461",
+      "name": "海马",
+      "catalogLabel": "海马",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0462",
+      "name": "海风藤",
+      "catalogLabel": "海风藤",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0463",
+      "name": "海龙",
+      "catalogLabel": "海龙",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0464",
+      "name": "海金沙",
+      "catalogLabel": "海金沙",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0465",
+      "name": "海螵蛸",
+      "catalogLabel": "海螵蛸",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0466",
+      "name": "海藻",
+      "catalogLabel": "海藻",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0467",
+      "name": "浮萍",
+      "catalogLabel": "浮萍",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0468",
+      "name": "通关藤",
+      "catalogLabel": "通关藤",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0469",
+      "name": "通草",
+      "catalogLabel": "通草",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0470",
+      "name": "预知子",
+      "catalogLabel": "预知子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0471",
+      "name": "桑叶",
+      "catalogLabel": "桑叶",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0472",
+      "name": "桑白皮",
+      "catalogLabel": "桑白皮",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0473",
+      "name": "桑枝",
+      "catalogLabel": "桑枝",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0474",
+      "name": "桑寄生",
+      "catalogLabel": "桑寄生",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0475",
+      "name": "桑椹",
+      "catalogLabel": "桑椹",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0476",
+      "name": "桑螵蛸",
+      "catalogLabel": "桑螵蛸",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0477",
+      "name": "黄山药",
+      "catalogLabel": "黄山药",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0478",
+      "name": "黄芩",
+      "catalogLabel": "黄芩",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0479",
+      "name": "黄芪",
+      "catalogLabel": "黄芪",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "huangqi"
+    },
+    {
+      "id": "chp2025-0480",
+      "name": "炙黄芪",
+      "catalogLabel": "炙黄芪",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0479"
+    },
+    {
+      "id": "chp2025-0481",
+      "name": "黄连",
+      "catalogLabel": "黄连",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0482",
+      "name": "黄柏",
+      "catalogLabel": "黄柏",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0483",
+      "name": "黄蜀葵花",
+      "catalogLabel": "黄蜀葵花",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0484",
+      "name": "黄精",
+      "catalogLabel": "黄精",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0485",
+      "name": "黄藤",
+      "catalogLabel": "黄藤",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0486",
+      "name": "菥蓂",
+      "catalogLabel": "菥蓂",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0487",
+      "name": "菝葜",
+      "catalogLabel": "菝葜",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0488",
+      "name": "菟丝子",
+      "catalogLabel": "菟丝子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0489",
+      "name": "菊苣",
+      "catalogLabel": "菊苣",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0490",
+      "name": "菊花",
+      "catalogLabel": "菊花",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null,
+      "legacyGameId": "juhua"
+    },
+    {
+      "id": "chp2025-0491",
+      "name": "梅花",
+      "catalogLabel": "梅花",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0492",
+      "name": "救必应",
+      "catalogLabel": "救必应",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0493",
+      "name": "常山",
+      "catalogLabel": "常山",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0494",
+      "name": "野马追",
+      "catalogLabel": "野马追",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0495",
+      "name": "野木瓜",
+      "catalogLabel": "野木瓜",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0496",
+      "name": "野菊花",
+      "catalogLabel": "野菊花",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0497",
+      "name": "蛇床子",
+      "catalogLabel": "蛇床子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0498",
+      "name": "蛇蜕",
+      "catalogLabel": "蛇蜕",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0499",
+      "name": "银杏叶",
+      "catalogLabel": "银杏叶",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0500",
+      "name": "银柴胡",
+      "catalogLabel": "银柴胡",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0501",
+      "name": "甜瓜子",
+      "catalogLabel": "甜瓜子",
+      "aliases": [],
+      "sourcePage": 4,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0502",
+      "name": "猪牙皂",
+      "catalogLabel": "猪牙皂",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0503",
+      "name": "猪苓",
+      "catalogLabel": "猪苓",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0504",
+      "name": "猪胆粉",
+      "catalogLabel": "猪胆粉",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0505",
+      "name": "猫爪草",
+      "catalogLabel": "猫爪草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0506",
+      "name": "麻黄",
+      "catalogLabel": "麻黄",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0507",
+      "name": "麻黄根",
+      "catalogLabel": "麻黄根",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0508",
+      "name": "鹿角",
+      "catalogLabel": "鹿角",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0509",
+      "name": "鹿角胶",
+      "catalogLabel": "鹿角胶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0510",
+      "name": "鹿角霜",
+      "catalogLabel": "鹿角霜",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0511",
+      "name": "鹿茸",
+      "catalogLabel": "鹿茸",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0512",
+      "name": "鹿衔草",
+      "catalogLabel": "鹿衔草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0513",
+      "name": "商陆",
+      "catalogLabel": "商陆",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0514",
+      "name": "旋覆花",
+      "catalogLabel": "旋覆花",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0515",
+      "name": "羚羊角",
+      "catalogLabel": "羚羊角",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0516",
+      "name": "断血流",
+      "catalogLabel": "断血流",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0517",
+      "name": "淫羊藿",
+      "catalogLabel": "淫羊藿",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0518",
+      "name": "淡竹叶",
+      "catalogLabel": "淡竹叶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0519",
+      "name": "淡豆豉",
+      "catalogLabel": "淡豆豉",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0520",
+      "name": "密蒙花",
+      "catalogLabel": "密蒙花",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0521",
+      "name": "续断",
+      "catalogLabel": "续断",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0522",
+      "name": "绵马贯众",
+      "catalogLabel": "绵马贯众",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0523",
+      "name": "绵马贯众炭",
+      "catalogLabel": "绵马贯众炭",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0522"
+    },
+    {
+      "id": "chp2025-0524",
+      "name": "绵萆薢",
+      "catalogLabel": "绵萆薢",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0525",
+      "name": "斑蝥",
+      "catalogLabel": "斑蝥",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0526",
+      "name": "款冬花",
+      "catalogLabel": "款冬花",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0527",
+      "name": "葛根",
+      "catalogLabel": "葛根",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0528",
+      "name": "葶苈子",
+      "catalogLabel": "葶苈子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0529",
+      "name": "萹蓄",
+      "catalogLabel": "萹蓄",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0530",
+      "name": "楮实子",
+      "catalogLabel": "楮实子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0531",
+      "name": "棕榈",
+      "catalogLabel": "棕榈",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0532",
+      "name": "硫黄",
+      "catalogLabel": "硫黄",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0533",
+      "name": "雄黄",
+      "catalogLabel": "雄黄",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0534",
+      "name": "紫石英",
+      "catalogLabel": "紫石英",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0535",
+      "name": "紫花地丁",
+      "catalogLabel": "紫花地丁",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0536",
+      "name": "紫花前胡",
+      "catalogLabel": "紫花前胡",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0537",
+      "name": "紫苏子",
+      "catalogLabel": "紫苏子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0538",
+      "name": "紫苏叶",
+      "catalogLabel": "紫苏叶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0539",
+      "name": "紫苏梗",
+      "catalogLabel": "紫苏梗",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0540",
+      "name": "紫草",
+      "catalogLabel": "紫草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0541",
+      "name": "紫珠叶",
+      "catalogLabel": "紫珠叶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0542",
+      "name": "紫萁贯众",
+      "catalogLabel": "紫萁贯众",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0543",
+      "name": "紫菀",
+      "catalogLabel": "紫菀",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0544",
+      "name": "蛤壳",
+      "catalogLabel": "蛤壳",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0545",
+      "name": "蛤蚧",
+      "catalogLabel": "蛤蚧",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0546",
+      "name": "黑芝麻",
+      "catalogLabel": "黑芝麻",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0547",
+      "name": "黑豆",
+      "catalogLabel": "黑豆",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0548",
+      "name": "黑种草子",
+      "catalogLabel": "黑种草子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0549",
+      "name": "锁阳",
+      "catalogLabel": "锁阳",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0550",
+      "name": "筋骨草",
+      "catalogLabel": "筋骨草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0551",
+      "name": "鹅不食草",
+      "catalogLabel": "鹅不食草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0552",
+      "name": "番泻叶",
+      "catalogLabel": "番泻叶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0553",
+      "name": "湖北贝母",
+      "catalogLabel": "湖北贝母",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0554",
+      "name": "滑石",
+      "catalogLabel": "滑石",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0555",
+      "name": "滑石粉",
+      "catalogLabel": "滑石粉",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0556",
+      "name": "蓍草",
+      "catalogLabel": "蓍草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0557",
+      "name": "蓝布正",
+      "catalogLabel": "蓝布正",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0558",
+      "name": "蓖麻子",
+      "catalogLabel": "蓖麻子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0559",
+      "name": "蒺藜",
+      "catalogLabel": "蒺藜",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0560",
+      "name": "蒲公英",
+      "catalogLabel": "蒲公英",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0561",
+      "name": "蒲黄",
+      "catalogLabel": "蒲黄",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0562",
+      "name": "椿皮",
+      "catalogLabel": "椿皮",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0563",
+      "name": "槐花",
+      "catalogLabel": "槐花",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0564",
+      "name": "槐角",
+      "catalogLabel": "槐角",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0565",
+      "name": "雷丸",
+      "catalogLabel": "雷丸",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0566",
+      "name": "路路通",
+      "catalogLabel": "路路通",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0567",
+      "name": "蜈蚣",
+      "catalogLabel": "蜈蚣",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0568",
+      "name": "蜂房",
+      "catalogLabel": "蜂房",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0569",
+      "name": "蜂胶",
+      "catalogLabel": "蜂胶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0570",
+      "name": "蜂蜡",
+      "catalogLabel": "蜂蜡",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0571",
+      "name": "蜂蜜",
+      "catalogLabel": "蜂蜜",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0572",
+      "name": "锦灯笼",
+      "catalogLabel": "锦灯笼",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0573",
+      "name": "矮地茶",
+      "catalogLabel": "矮地茶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0574",
+      "name": "满山红",
+      "catalogLabel": "满山红",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0575",
+      "name": "滇鸡血藤",
+      "catalogLabel": "滇鸡血藤",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0576",
+      "name": "裸花紫珠",
+      "catalogLabel": "裸花紫珠",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0577",
+      "name": "蔓荆子",
+      "catalogLabel": "蔓荆子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0578",
+      "name": "蓼大青叶",
+      "catalogLabel": "蓼大青叶",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0579",
+      "name": "榧子",
+      "catalogLabel": "榧子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0580",
+      "name": "榼藤子",
+      "catalogLabel": "榼藤子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0581",
+      "name": "槟榔",
+      "catalogLabel": "槟榔",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0582",
+      "name": "焦槟榔",
+      "catalogLabel": "焦槟榔",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": true,
+      "catalogParentId": "chp2025-0581"
+    },
+    {
+      "id": "chp2025-0583",
+      "name": "酸枣仁",
+      "catalogLabel": "酸枣仁",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0584",
+      "name": "磁石",
+      "catalogLabel": "磁石",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0585",
+      "name": "豨莶草",
+      "catalogLabel": "豨莶草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0586",
+      "name": "蜘蛛香",
+      "catalogLabel": "蜘蛛香",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0587",
+      "name": "蝉蜕",
+      "catalogLabel": "蝉蜕",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0588",
+      "name": "罂粟壳",
+      "catalogLabel": "罂粟壳",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0589",
+      "name": "辣椒",
+      "catalogLabel": "辣椒",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0590",
+      "name": "漏芦",
+      "catalogLabel": "漏芦",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0591",
+      "name": "赭石",
+      "catalogLabel": "赭石",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0592",
+      "name": "蕤仁",
+      "catalogLabel": "蕤仁",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0593",
+      "name": "蕲蛇",
+      "catalogLabel": "蕲蛇",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0594",
+      "name": "槲寄生",
+      "catalogLabel": "槲寄生",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0595",
+      "name": "暴马子皮",
+      "catalogLabel": "暴马子皮",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0596",
+      "name": "墨旱莲",
+      "catalogLabel": "墨旱莲",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0597",
+      "name": "稻芽",
+      "catalogLabel": "稻芽",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0598",
+      "name": "僵蚕",
+      "catalogLabel": "僵蚕",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0599",
+      "name": "鹤虱",
+      "catalogLabel": "鹤虱",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0600",
+      "name": "薤白",
+      "catalogLabel": "薤白",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0601",
+      "name": "薏苡仁",
+      "catalogLabel": "薏苡仁",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0602",
+      "name": "薄荷",
+      "catalogLabel": "薄荷",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0603",
+      "name": "颠茄草",
+      "catalogLabel": "颠茄草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0604",
+      "name": "橘红",
+      "catalogLabel": "橘红",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0605",
+      "name": "橘核",
+      "catalogLabel": "橘核",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0606",
+      "name": "藏菖蒲",
+      "catalogLabel": "藏菖蒲",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0607",
+      "name": "藁本",
+      "catalogLabel": "藁本",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0608",
+      "name": "檀香",
+      "catalogLabel": "檀香",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0609",
+      "name": "翼首草",
+      "catalogLabel": "翼首草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0610",
+      "name": "藕节",
+      "catalogLabel": "藕节",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0611",
+      "name": "覆盆子",
+      "catalogLabel": "覆盆子",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0612",
+      "name": "瞿麦",
+      "catalogLabel": "瞿麦",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0613",
+      "name": "翻白草",
+      "catalogLabel": "翻白草",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0614",
+      "name": "蟾酥",
+      "catalogLabel": "蟾酥",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0615",
+      "name": "鳖甲",
+      "catalogLabel": "鳖甲",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    },
+    {
+      "id": "chp2025-0616",
+      "name": "麝香",
+      "catalogLabel": "麝香",
+      "aliases": [],
+      "sourcePage": 5,
+      "catalogIndent": false,
+      "catalogParentId": null
+    }
+  ]
+}

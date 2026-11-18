@@ -1,0 +1,27 @@
+{
+  "description": "本草小药铺 · 六屉归药、本草图鉴与温故复习",
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": ".workbuddy"
+      },
+      {
+        "type": "folder",
+        "value": "assets/herbs"
+      }
+    ],
+    "include": []
+  },
+  "setting": {
+    "bundle": false,
+    "es6": true,
+    "minified": true,
+    "postcss": true,
+    "urlCheck": true
+  },
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "herbal-apothecary",
+  "miniprogramRoot": "./"
+}

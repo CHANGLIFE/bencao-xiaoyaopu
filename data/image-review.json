@@ -1,0 +1,21 @@
+{
+  "reviewDate": "2026-11-15",
+  "method": "逐张查看生成原图，对照data/learning-materials.json指定的2025药典正文可见性状与样本规格。仅为入门AI示意图的形态比对，不等于实物鉴定。",
+  "generationRecipe": "为中药学习游戏生成一张【name】的【sampleLabel】示意图。依据已核对描述【appearanceDescription】，只展示这一种样品，浅米色无纹理背景，柔和中性光，微距，整体与关键特征清晰，主体居中留白，不添原植物、其他物品、标签文字、水印。",
+  "recipeData": "data/learning-materials.json中每味的name、sampleLabel、appearanceDescription与sources",
+  "originals": ".workbuddy/generated/<id>/*.png；莲子采用lianzi-retry目录，原始文件未修改",
+  "displayProcessing": "原图保留；供界面使用的版本裁去底部96px生成标识区域，再自动裁掉浅米色空白边缘、主体留少量边距，等比例收进520px方框，JPEG质量82。同一裁切版同时用于托盘、放大与图鉴，不另存重复托盘图；界面明确标注AI示意图。",
+  "renshen": {"status": "accepted-for-introductory-practice", "checks": ["类圆薄片，边缘自然不规则", "淡黄白切面和浅灰黄外缘", "棕黄形成层环纹、细小黄棕点", "细放射裂隙可见，无根茎陪衬"], "limitation": "细点与环纹为AI近似，不能用于判断实物真伪"},
+  "gouqi": {"status": "accepted-for-introductory-practice", "checks": ["类纺锤、椭圆干果", "红至暗红皱缩皮", "果端小突起与浅白梗痕", "无叶枝与鲜果陪衬"]},
+  "juhua": {"status": "accepted-for-introductory-practice", "checks": ["干燥扁平花序", "类白折皱舌状花", "中央管状花外露", "无茎叶，无硕大重瓣鲜花"]},
+  "jinyinhua": {"status": "accepted-for-introductory-practice", "checks": ["略弯棒状花蕾，上粗下细", "绿白黄白表面", "短柔毛可见", "下端绿色裂萼，无叶枝"], "limitation": "AI对柔毛有增强，不作为毛被密度的实物标准"},
+  "huangqi": {"status": "accepted-for-introductory-practice", "checks": ["类圆或椭圆厚片", "黄白至淡棕外缘", "木部淡黄与皮部黄白的色差", "放射状纹理和自然裂隙，无蜜炙焦斑"]},
+  "danggui": {"status": "accepted-for-introductory-practice", "checks": ["自然不规则类圆或椭圆薄片", "棕外缘与浅色平坦切面", "棕色环纹与多数细小棕点", "油点未画成大孔，非酒当归焦斑"], "limitation": "与同为根类的切片外观接近，鼓励放大观察油点与厚薄，不作为排他鉴定"},
+  "gancao": {"status": "accepted-for-introductory-practice", "checks": ["类圆厚片", "红棕外皮和黄白中心", "明显形成层环与放射纹理", "纤维粉性切面，未蜜炙"]},
+  "chenpi": {"status": "accepted-for-introductory-practice", "checks": ["不规则干燥条丝", "橙红或红棕外表面点状油室", "浅黄白粗糙内面", "筋络状纹理，未混入鲜橘与叶片"]},
+  "shanzha": {"status": "accepted-for-introductory-practice", "checks": ["干燥皱缩圆片", "红皮和灰白小斑点", "深黄至浅棕果肉", "一片可见五粒浅黄果核，另有中空片"], "limitation": "果核周围空隙为AI近似，不将空隙数量作为辨认标准"},
+  "fuling": {"status": "accepted-for-introductory-practice", "checks": ["白色立方块和方块厚片", "干燥细颗粒质感", "无根类环纹与油点", "无外皮或植物杂物"]},
+  "dazao": {"status": "accepted-for-introductory-practice", "checks": ["椭圆暗红干果", "不规则皱纹和略有光泽", "短果梗与凹陷基部", "破开棕黄果肉和两端尖果核"]},
+  "lianzi": {"status": "accepted-for-introductory-practice", "selectedAttempt": 2, "checks": ["红棕类卵形种子", "细纵纹与脉纹，小端痕", "半粒黄白肥厚子叶", "去心空隙，无绿色莲子心"], "rejectedAttempt": {"folder": ".workbuddy/generated/lianzi", "reason": "首版端部巨大粗糙底盘，容易误认坚果壳帽，不进入图鉴与练习"}},
+  "legacyImages": {"status": "not-used-in-new-practice", "folder": "assets/herbs", "reason": "旧12张保留用于原版兼容和溯源；插画风格不统一于写实标本，部分带植物、鲜果或泥苔，不作为新练习素材"}
+}

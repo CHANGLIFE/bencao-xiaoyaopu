@@ -1,0 +1,62 @@
+{
+  "renshen": {
+    "enabled": true, "image": "/assets/specimens/renshen.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "decoction-piece",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照人参片正文可见特征", "locator": "data/image-review.json#renshen"}},
+    "imageProvenance": {"origin": "本项目AI生成，人参片，2026-11-15", "citation": "data/learning-materials.json#renshen；原图保存在.workbuddy/generated/renshen", "sampleType": "decoction-piece", "license": "generated-for-project"}
+  },
+  "gouqi": {
+    "enabled": true, "image": "/assets/specimens/gouqi.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "raw-herb",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照枸杞子正文可见特征", "locator": "data/image-review.json#gouqi"}},
+    "imageProvenance": {"origin": "本项目AI生成，枸杞子干燥果实，2026-11-15", "citation": "data/learning-materials.json#gouqi；原图保存在.workbuddy/generated/gouqi", "sampleType": "raw-herb", "license": "generated-for-project"}
+  },
+  "juhua": {
+    "enabled": true, "image": "/assets/specimens/juhua.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "raw-herb",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照杭菊正文可见特征", "locator": "data/image-review.json#juhua"}},
+    "imageProvenance": {"origin": "本项目AI生成，菊花杭菊规格，2026-11-15", "citation": "data/learning-materials.json#juhua；原图保存在.workbuddy/generated/juhua", "sampleType": "raw-herb", "license": "generated-for-project"}
+  },
+  "jinyinhua": {
+    "enabled": true, "image": "/assets/specimens/jinyinhua.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "raw-herb",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照金银花花蕾正文可见特征", "locator": "data/image-review.json#jinyinhua"}},
+    "imageProvenance": {"origin": "本项目AI生成，金银花干燥花蕾，2026-11-15", "citation": "data/learning-materials.json#jinyinhua；原图保存在.workbuddy/generated/jinyinhua", "sampleType": "raw-herb", "license": "generated-for-project"}
+  },
+  "huangqi": {
+    "enabled": true, "image": "/assets/specimens/huangqi.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "decoction-piece",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照黄芪厚片正文可见特征", "locator": "data/image-review.json#huangqi"}},
+    "imageProvenance": {"origin": "本项目AI生成，黄芪厚片，2026-11-15", "citation": "data/learning-materials.json#huangqi；原图保存在.workbuddy/generated/huangqi", "sampleType": "decoction-piece", "license": "generated-for-project"}
+  },
+  "danggui": {
+    "enabled": true, "image": "/assets/specimens/danggui.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "decoction-piece",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照当归薄片正文可见特征", "locator": "data/image-review.json#danggui"}},
+    "imageProvenance": {"origin": "本项目AI生成，当归薄片非酒当归，2026-11-15", "citation": "data/learning-materials.json#danggui；原图保存在.workbuddy/generated/danggui", "sampleType": "decoction-piece", "license": "generated-for-project"}
+  },
+  "gancao": {
+    "enabled": true, "image": "/assets/specimens/gancao.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "decoction-piece",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照甘草厚片正文可见特征", "locator": "data/image-review.json#gancao"}},
+    "imageProvenance": {"origin": "本项目AI生成，甘草厚片非炙甘草，2026-11-15", "citation": "data/learning-materials.json#gancao；原图保存在.workbuddy/generated/gancao", "sampleType": "decoction-piece", "license": "generated-for-project"}
+  },
+  "chenpi": {
+    "enabled": true, "image": "/assets/specimens/chenpi.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "decoction-piece",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照陈皮丝正文可见特征", "locator": "data/image-review.json#chenpi"}},
+    "imageProvenance": {"origin": "本项目AI生成，陈皮丝，2026-11-15", "citation": "data/learning-materials.json#chenpi；原图保存在.workbuddy/generated/chenpi", "sampleType": "decoction-piece", "license": "generated-for-project"}
+  },
+  "shanzha": {
+    "enabled": true, "image": "/assets/specimens/shanzha.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "raw-herb",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照山楂干燥果片正文可见特征", "locator": "data/image-review.json#shanzha"}},
+    "imageProvenance": {"origin": "本项目AI生成，山楂干燥果片，2026-11-15", "citation": "data/learning-materials.json#shanzha；原图保存在.workbuddy/generated/shanzha", "sampleType": "raw-herb", "license": "generated-for-project"}
+  },
+  "fuling": {
+    "enabled": true, "image": "/assets/specimens/fuling.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "decoction-piece",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照白茯苓块正文可见特征", "locator": "data/image-review.json#fuling"}},
+    "imageProvenance": {"origin": "本项目AI生成，白茯苓块，2026-11-15", "citation": "data/learning-materials.json#fuling；原图保存在.workbuddy/generated/fuling", "sampleType": "decoction-piece", "license": "generated-for-project"}
+  },
+  "dazao": {
+    "enabled": true, "image": "/assets/specimens/dazao.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "raw-herb",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；已逐图对照大枣干燥果实正文可见特征", "locator": "data/image-review.json#dazao"}},
+    "imageProvenance": {"origin": "本项目AI生成，大枣干燥果实，2026-11-15", "citation": "data/learning-materials.json#dazao；原图保存在.workbuddy/generated/dazao", "sampleType": "raw-herb", "license": "generated-for-project"}
+  },
+  "lianzi": {
+    "enabled": true, "image": "/assets/specimens/lianzi.jpg", "imageType": "ai-illustration", "imageVerified": true, "sampleType": "decoction-piece",
+    "sources": {"image": {"type": "image", "citation": "本项目AI标本示意图；首版未通过，重做后对照去心莲子正文可见特征", "locator": "data/image-review.json#lianzi"}},
+    "imageProvenance": {"origin": "本项目AI生成，红棕皮去心莲子，第2版，2026-11-15", "citation": "data/learning-materials.json#lianzi；原图保存在.workbuddy/generated/lianzi-retry", "sampleType": "decoction-piece", "license": "generated-for-project"}
+  }
+}

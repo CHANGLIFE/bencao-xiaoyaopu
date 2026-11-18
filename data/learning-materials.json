@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "edition": 2025,
+    "citation": "2025年版《中华人民共和国药典》一部",
+    "editionEvidenceUrl": "https://2025.chp.org.cn",
+    "editionEvidenceText": "2025年版《中国药典》网络版使用说明",
+    "scope": "12味学习素材，以旧游戏ID为键。目录仅用于定位和ID映射；功效与可见特征依据官方网络版正文。effect为完整功效句，shortEffect为连续短节选；不将主治或现代药理并入功效。",
+    "verificationScope": "effectVerified及recognitionVerified表示正文内容已核读，不表示图片已核验，也不表示完成实物真伪鉴定。",
+    "titleVerificationLimitation": "WebFetch页面总标题均为中华人民共和国药典。枸杞子、菊花、金银花、陈皮、山楂、茯苓、大枣、莲子的提取结果含同名独立词条标题。人参、黄芪、当归提取结果未显示独立词条标题，正文来源与饮片或鉴别内容明确对应同名药味，wordTitleVerified保持false；尚未达到逐味独立标题验证全部通过。甘草标题在上一轮官方正文核读中已确认。",
+    "imagePolicy": "用户已授权AI生成图片，并允许经外观比对后入题。当前所有imageVerified为false；生成后需按所选样本规格与正文可见特征逐项比对，再更新图片状态。",
+    "generationStyle": "以下appearanceDescription可直接用于生图。统一使用单味药材标本风格、浅色纯背景、自然柔光、清晰微距、真实干燥质感；不加文字、水印、包装、器皿或其他药材。摄影风格为AI示意图，不冒充实拍。",
+    "processingRelations": [
+      {
+        "fromLegacyId": "gancao",
+        "fromName": "甘草片",
+        "toCatalogId": "chp2025-0127",
+        "toName": "炙甘草",
+        "relation": "蜜炙炮制加工品",
+        "verified": true,
+        "sourceText": "本品为甘草的炮制加工品。取甘草片，照蜜炙法（通则0213）炒至黄色至深黄色，不粘手时取出，晾凉。",
+        "effect": "补脾和胃，益气复脉。",
+        "appearanceDescription": "类圆形或椭圆形切片，外表皮红棕色或灰棕色、微有光泽；切面黄色至深黄色，形成层环明显，射线放射状。不可用甘草黄白色切面替代。",
+        "source": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 炙甘草", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=127 + 首句、【炮制】、【性状】、【功能与主治】", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=127"}
+      }
+    ]
+  },
+  "renshen": {
+    "name": "人参",
+    "catalogId": "chp2025-0006",
+    "wordTitleVerified": false,
+    "nameEvidence": "独立词条标题未在抓取结果中显示；首段为五加科植物人参的干燥根和根茎，饮片列人参片。",
+    "effect": "大补元气，复脉固脱，补脾益肺，生津养血，安神益智。",
+    "shortEffect": "大补元气",
+    "recognition": "人参片呈圆形或类圆形薄片；外表皮灰黄色，切面淡黄白色或类白色，显粉性；形成层环纹棕黄色，皮部有黄棕色点状树脂道及放射性裂隙。",
+    "observationHint": "先看薄片外缘的灰黄色表皮，再找切面的棕黄色环纹与皮部黄棕色小点，观察向外放射的裂隙。",
+    "sampleType": "decoction-piece",
+    "sampleLabel": "人参片（饮片）",
+    "appearanceDescription": "展示数片人参饮片，圆形或类圆形薄片，部分平放、部分轻微倾斜以显示薄度。外缘表皮灰黄色；主要切面淡黄白色或类白色，呈自然粉性质感。切面可辨棕黄色形成层环纹，皮部有细小黄棕色点状树脂道及放射性裂隙，细节自然不过度放大。不使用红棕色半透明红参片，不以整支根替代本条所选薄片。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 人参", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=6 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=6"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 人参", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=6 + 饮片：人参片【性状】", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=6"}
+    }
+  },
+  "gouqi": {
+    "name": "枸杞子",
+    "catalogId": "chp2025-0390",
+    "wordTitleVerified": true,
+    "effect": "滋补肝肾，益精明目。",
+    "shortEffect": "益精明目",
+    "recognition": "干燥成熟果实呈类纺锤形或椭圆形，长6～20mm；表面红色或暗红色，果皮皱缩；顶端有小突起状花柱痕，基部有白色果梗痕。",
+    "observationHint": "观察红色皱缩果皮与两端不同的痕迹：一端是小突起状花柱痕，另一端为白色果梗痕。",
+    "sampleType": "raw-herb",
+    "sampleLabel": "枸杞子（干燥成熟果实）",
+    "appearanceDescription": "展示少量完整干燥枸杞子，类纺锤形与椭圆形自然混合，长度6～20mm、直径3～10mm的比例。表面红色至暗红色，果皮有自然皱缩，保留果肉柔润的干果外观；不同朝向展示顶端小突起状花柱痕及基部白色果梗痕。不画成光滑饱满的鲜浆果，不附长果梗，不额外添加剖面。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 枸杞子", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=390 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=390"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 枸杞子", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=390 + 来源、【性状】；本次正文未单列饮片性状", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=390"}
+    }
+  },
+  "juhua": {
+    "name": "菊花",
+    "catalogId": "chp2025-0490",
+    "wordTitleVerified": true,
+    "effect": "散风清热，平肝明目，清热解毒。",
+    "shortEffect": "平肝明目",
+    "recognition": "本条固定选杭菊规格：干燥头状花序呈碟形或扁球形，直径2.5～4cm，常数个相连成片；舌状花类白色或黄色，平展或微折叠、彼此粘连；中央管状花多数，外露，通常无腺点。",
+    "observationHint": "看花序是否呈较扁的碟形，再观察外围平展或微折叠且彼此粘连的舌状花，以及中央外露的多数管状花。",
+    "sampleType": "raw-herb",
+    "sampleLabel": "菊花·杭菊（干燥头状花序）",
+    "appearanceDescription": "只展示杭菊规格的干燥头状花序，不混合其他菊花规格。花序碟形或扁球形，直径2.5～4cm的比例，可有数个自然相连成片。外围舌状花选类白色，平展或微折叠，彼此粘连，呈干燥折皱质感；中央多数管状花外露。采用一组正面及略侧视角表现扁平花序，通常无腺点，不人为添加斑点，不画成带茎叶的新鲜观赏菊。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 菊花", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=490 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=490"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 菊花", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=490 + 【性状】杭菊分项；本次正文未单列饮片性状", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=490"}
+    }
+  },
+  "jinyinhua": {
+    "name": "金银花",
+    "catalogId": "chp2025-0342",
+    "wordTitleVerified": true,
+    "effect": "清热解毒，疏散风热。",
+    "shortEffect": "清热解毒",
+    "recognition": "干燥花蕾呈棒状，上粗下细、略弯曲，长2～3cm；表面黄白色或绿白色，密被短柔毛；绿色花萼先端5裂。带初开的花花冠筒状，先端二唇形。",
+    "observationHint": "先找略弯的棒状轮廓与上粗下细的比例，再近看表面短柔毛及下端绿色五裂花萼。",
+    "sampleType": "raw-herb",
+    "sampleLabel": "金银花（干燥花蕾）",
+    "appearanceDescription": "展示数枚完整干燥金银花花蕾，以未开放花蕾为主。花蕾呈棒状，上粗下细、略弯曲，长度2～3cm，上部直径约3mm、下部约1.5mm的比例。表面黄白色或绿白色，密被细短柔毛；基部花萼绿色，先端五裂，裂片有毛。近景能分辨柔毛但不夸张成厚绒，不画成金黄色大朵盛开鲜花，不添加叶枝或花束。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 金银花", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=342 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=342"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 金银花", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=342 + 来源、【性状】；本次正文未单列饮片性状", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=342"}
+    }
+  },
+  "huangqi": {
+    "name": "黄芪",
+    "catalogId": "chp2025-0479",
+    "wordTitleVerified": false,
+    "nameEvidence": "独立词条标题未在抓取结果中显示；首段为蒙古黄芪或膜荚黄芪的干燥根，鉴别列黄芪对照药材。",
+    "effect": "补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌。",
+    "shortEffect": "补气升阳",
+    "recognition": "类圆形或椭圆形厚片；外表皮黄白色至淡棕褐色，可见纵皱纹或纵沟；切面皮部黄白色，木部淡黄色，有放射状纹理及裂隙。",
+    "observationHint": "看切面外侧黄白色皮部与内侧淡黄色木部的色差，再找从中心向外的放射状纹理和裂隙。",
+    "sampleType": "decoction-piece",
+    "sampleLabel": "黄芪片（饮片）",
+    "appearanceDescription": "展示数片未经蜜炙的黄芪厚片，类圆形或椭圆形，自然不完全规则。外缘表皮黄白色至淡棕褐色，可见纵皱纹或纵沟；切面皮部黄白色、木部淡黄色，放射状纹理和自然裂隙清晰。部分轻微倾斜以表现厚片和纤维质感。选择中心完整的样本，不强行加入正文所述偶见枯朽黑心或空洞，不画成长条斜切柳叶形，不添加蜜炙焦斑。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 黄芪", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=479 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=479"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 黄芪", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=479 + 饮片【炮制】【性状】", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=479"}
+    }
+  },
+  "danggui": {
+    "name": "当归",
+    "catalogId": "chp2025-0204",
+    "wordTitleVerified": false,
+    "nameEvidence": "独立词条标题未在抓取结果中显示；首段为伞形科植物当归的干燥根，饮片炮制列当归与酒当归。",
+    "effect": "补血活血，调经止痛，润肠通便。",
+    "shortEffect": "补血活血",
+    "recognition": "类圆形、椭圆形或不规则薄片；外表皮浅棕色至棕褐色；切面浅棕黄色或黄白色，平坦，有裂隙，中间有浅棕色形成层环，并有多数棕色油点。",
+    "observationHint": "近看平坦浅色切面上的多数棕色油点，再观察浅棕色环纹和自然裂隙。",
+    "sampleType": "decoction-piece",
+    "sampleLabel": "当归片（饮片，非酒当归）",
+    "appearanceDescription": "展示数片未经酒炙的当归薄片，类圆形、椭圆形及自然不规则薄片。外缘表皮浅棕色至棕褐色；切面浅棕黄色或黄白色、平坦，有自然裂隙，中间可见浅棕色形成层环，多数细小棕色油点分布于切面。选不同朝向展示外缘及切面。避免绘制酒当归的焦斑或把切面画成深黄色，避免把油点夸张成大孔洞。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 当归", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=204 + 【功能与主治】当归功效句；不含酒当归专属功效", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=204"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 当归", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=204 + 饮片：当归【炮制】【性状】，非酒当归分项", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=204"}
+    }
+  },
+  "gancao": {
+    "name": "甘草",
+    "catalogId": "chp2025-0126",
+    "wordTitleVerified": true,
+    "effect": "补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。",
+    "shortEffect": "调和诸药",
+    "recognition": "类圆形或椭圆形厚片；外表皮红棕色或灰棕色，具纵皱纹；切面略显纤维性，中心黄白色，有明显放射状纹理及形成层环，具粉性。",
+    "observationHint": "观察红棕色或灰棕色外皮与黄白色中心的对比，再找明显环纹及放射状纹理；不要与黄色至深黄色切面的炙甘草混用。",
+    "sampleType": "decoction-piece",
+    "sampleLabel": "甘草片（饮片，非炙甘草）",
+    "appearanceDescription": "展示数片未经蜜炙的甘草厚片，类圆形或椭圆形。外表皮红棕色或灰棕色，保留纵皱纹；切面略显纤维性、具粉性质感，中心黄白色，形成层环与放射状纹理清楚。以平放切面为主，辅以侧放显示厚片边缘。不要画成炙甘草黄色至深黄色、微有光泽的切片，不添加蜂蜜、焦斑或糖衣。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 甘草", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=126 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=126"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 甘草", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=126 + 饮片【炮制】【性状】", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=126"}
+    }
+  },
+  "chenpi": {
+    "name": "陈皮",
+    "catalogId": "chp2025-0293",
+    "wordTitleVerified": true,
+    "effect": "理气健脾，燥湿化痰。",
+    "shortEffect": "理气健脾",
+    "recognition": "选陈皮饮片分项：不规则条状或丝状；外表面橙红色或红棕色，有细皱纹和凹下的点状油室；内表面浅黄白色、粗糙，附黄白色或黄棕色筋络状维管束。",
+    "observationHint": "翻看条丝的两面：外面找凹下的点状油室，里面找浅黄白色粗糙表面及筋络状维管束。",
+    "sampleType": "decoction-piece",
+    "sampleLabel": "陈皮丝（饮片，陈皮分项）",
+    "appearanceDescription": "展示少量不规则条状或丝状陈皮饮片，部分自然翻转，使内外两面同时可见。外表面橙红色或红棕色，有细皱纹与凹下的点状油室；内表面浅黄白色、粗糙，附黄白色或黄棕色筋络状维管束。保持干燥果皮质感，不画成鲜橘皮或完整橘子，不套用2025正文广陈皮年久陈者棕褐色内面的专属描述，不编造切面环纹。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 陈皮", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=293 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=293"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 陈皮", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=293 + 饮片【性状】陈皮分项，非广陈皮分项", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=293"}
+    }
+  },
+  "shanzha": {
+    "name": "山楂",
+    "catalogId": "chp2025-0043",
+    "wordTitleVerified": true,
+    "effect": "消食健胃，行气散瘀，化浊降脂。",
+    "shortEffect": "消食健胃",
+    "recognition": "干燥果实切成圆形片，皱缩不平，直径1～2.5cm、厚0.2～0.4cm；外皮红色，有皱纹和灰白色小斑点；果肉深黄色至浅棕色；中部横切片具5粒浅黄色果核，有的核脱落而中空。",
+    "observationHint": "先看红色外皮上的灰白色小斑点，再数中部横切片的浅黄色果核；核脱落的片会出现空缺。",
+    "sampleType": "raw-herb",
+    "sampleLabel": "山楂（药材，干燥果实切片，非炒焦品）",
+    "appearanceDescription": "展示数片未经炒焦的干燥山楂果实圆形片，直径1～2.5cm、厚0.2～0.4cm的比例，皱缩不平。外缘果皮红色，具自然皱纹与灰白色小斑点；果肉深黄色至浅棕色。至少一片展示中部横切片的5粒浅黄色果核，另可有核自然脱落而中空的片。灰白色小斑点只表现为果皮固有斑点，不画霉毛；不画成鲜红完整果，不添加炒山楂焦斑或焦山楂焦褐色表面。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 山楂", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=43 + 【功能与主治】山楂功效句，不含焦山楂增强作用", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=43"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 山楂", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=43 + 来源、首个【性状】，非炒山楂或焦山楂性状", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=43"}
+    }
+  },
+  "fuling": {
+    "name": "茯苓",
+    "catalogId": "chp2025-0374",
+    "wordTitleVerified": true,
+    "effect": "利水渗湿，健脾，宁心。",
+    "shortEffect": "利水渗湿",
+    "recognition": "本条选去皮茯苓块饮片：立方块状或方块状厚片，大小不一；正文允许白色、淡红色或淡棕色，本图固定选白色；不能套用茯苓个的棕褐色至黑褐色粗糙外皮。",
+    "observationHint": "观察去皮后的方块或方块状厚片轮廓与白色表面，区分带深色皱缩外皮的茯苓个。不要把环纹或放射状纹理作为本样本特征。",
+    "sampleType": "decoction-piece",
+    "sampleLabel": "茯苓块（去皮饮片，白色样本）",
+    "appearanceDescription": "展示数块去皮茯苓块饮片，立方块状或方块状厚片，大小自然不一，固定选择正文允许的白色样本。主体为干燥菌核块的朴素外观，轻微侧视体现方块体积与厚度，不做过度规则的工业立方体。不要附棕黑色外皮，不添加根类药材的年轮、放射状纹理或油点，不添加正文未描述的孔洞及晶体结构。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 茯苓", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=374 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=374"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 茯苓", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=374 + 【性状】茯苓块分项、饮片【炮制】及【性状】同药材", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=374"}
+    }
+  },
+  "dazao": {
+    "name": "大枣",
+    "catalogId": "chp2025-0030",
+    "wordTitleVerified": true,
+    "effect": "补中益气，养血安神。",
+    "shortEffect": "养血安神",
+    "recognition": "干燥成熟果实呈椭圆形或球形，长2～3.5cm；表面暗红色、略带光泽，有不规则皱纹；基部凹陷，有短果梗；果肉棕黄色或淡褐色，果核纺锤形、两端锐尖。",
+    "observationHint": "看暗红色果皮的不规则皱纹与凹陷基部；若展示破开样本，观察棕黄色至淡褐色果肉及两端尖的纺锤形果核。",
+    "sampleType": "raw-herb",
+    "sampleLabel": "大枣（干燥成熟果实）",
+    "appearanceDescription": "展示数枚完整干燥大枣，椭圆形或球形，长度2～3.5cm、直径1.5～2.5cm的比例。表面暗红色，略带自然光泽，有不规则皱纹；让一枚基部朝向镜头，显示凹陷与短果梗。可配一枚破开样本显示薄外果皮、棕黄色或淡褐色果肉及两端锐尖的纺锤形果核；若破开则保留自然肉质外观。不画成光滑鲜枣，不糖渍，不添加白霜或霉斑。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 大枣", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=30 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=30"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 大枣", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=30 + 首个【性状】；饮片【炮制】记用时破开或去核，【性状】同药材", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=30"}
+    }
+  },
+  "lianzi": {
+    "name": "莲子",
+    "catalogId": "chp2025-0429",
+    "wordTitleVerified": true,
+    "effect": "补脾止泻，止带，益肾涩精，养心安神。",
+    "shortEffect": "补脾止泻",
+    "recognition": "本条选去心莲子饮片：略呈椭圆形、类球形、类半球形或不规则碎块；表面红棕色，有细纵纹和较宽脉纹；完整或半球形者一端中心有棕褐色乳头状突起，多有裂口、周边略下陷；子叶黄白色、肥厚，中有空隙。",
+    "observationHint": "先看红棕色薄种皮的细纵纹和较宽脉纹，再看一端的乳头状突起；半粒可见黄白色肥厚子叶与去心后的空隙。",
+    "sampleType": "decoction-piece",
+    "sampleLabel": "莲子（保留红棕色种皮、去心饮片）",
+    "appearanceDescription": "展示去心莲子饮片，以保留红棕色薄种皮的椭圆形、类球形完整粒和类半球形半粒组合。种皮表面有细纵纹与较宽脉纹；一端中心棕褐色乳头状突起，多有裂口，周边略下陷。半粒朝上显示黄白色肥厚子叶及中央空隙，不出现绿色莲子心。完整药材长1.2～1.8cm、直径0.8～1.4cm可作为相对比例参考。不用通体纯白去皮莲子替代红棕色种皮规格，不画成带莲房的鲜莲子。",
+    "effectVerified": true,
+    "recognitionVerified": true,
+    "imageVerified": false,
+    "sources": {
+      "effect": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 莲子", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=429 + 【功能与主治】功效句", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=429"},
+      "recognition": {"type": "primary-text", "citation": "2025年版《中华人民共和国药典》一部 · 莲子", "locator": "https://2025.chp.org.cn/#/item?bookId=1&entryId=429 + 饮片【炮制】【性状】；尺寸参考药材【性状】", "url": "https://2025.chp.org.cn/#/item?bookId=1&entryId=429"}
+    }
+  }
+}

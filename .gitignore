@@ -1,0 +1,14 @@
+# WorkBuddy 工作区过程资产：原始正文缓存、AI 生图、截图录像、测试脚本、临时工具
+.workbuddy/
+
+# 预览应用卡：含本机绑定信息
+.wbapp_*.genie
+
+# 旧版插画：已被 project.config.json 排除打包，仅本地溯源
+assets/herbs/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
